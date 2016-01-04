@@ -15,6 +15,13 @@
 		FDA18FC41C3A47E800DFA1D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA18FC21C3A47E800DFA1D1 /* LaunchScreen.storyboard */; };
 		FDA18FCF1C3A47E800DFA1D1 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA18FCE1C3A47E800DFA1D1 /* _____Tests.m */; };
 		FDA18FDA1C3A47E800DFA1D1 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA18FD91C3A47E800DFA1D1 /* _____UITests.m */; };
+		FDDE45871C3A4E5A00C39457 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDE45621C3A4E5A00C39457 /* Foundation+Log.m */; };
+		FDDE45881C3A4E5A00C39457 /* NSDate+WJ.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDE45641C3A4E5A00C39457 /* NSDate+WJ.m */; };
+		FDDE45891C3A4E5A00C39457 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDE45661C3A4E5A00C39457 /* NSString+Emoji.m */; };
+		FDDE458A1C3A4E5A00C39457 /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDE45681C3A4E5A00C39457 /* NSString+File.m */; };
+		FDDE458B1C3A4E5A00C39457 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDE456A1C3A4E5A00C39457 /* UIBarButtonItem+Extension.m */; };
+		FDDE458C1C3A4E5A00C39457 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDE456C1C3A4E5A00C39457 /* UIImage+Extension.m */; };
+		FDDE458D1C3A4E5A00C39457 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDE456E1C3A4E5A00C39457 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +43,9 @@
 
 /* Begin PBXFileReference section */
 		FDA18FB11C3A47E800DFA1D1 /* 漳州公积金.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "漳州公积金.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDA18FB51C3A47E800DFA1D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FDA18FB71C3A47E800DFA1D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FDA18FB81C3A47E800DFA1D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FDA18FB51C3A47E800DFA1D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../../main.m; sourceTree = "<group>"; };
+		FDA18FB71C3A47E800DFA1D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../../AppDelegate.h; sourceTree = "<group>"; };
+		FDA18FB81C3A47E800DFA1D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../../AppDelegate.m; sourceTree = "<group>"; };
 		FDA18FBA1C3A47E800DFA1D1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FDA18FBB1C3A47E800DFA1D1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FDA18FBE1C3A47E800DFA1D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +58,19 @@
 		FDA18FD51C3A47E800DFA1D1 /* 漳州公积金UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "漳州公积金UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA18FD91C3A47E800DFA1D1 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		FDA18FDB1C3A47E800DFA1D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDDE45621C3A4E5A00C39457 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		FDDE45631C3A4E5A00C39457 /* NSDate+WJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+WJ.h"; sourceTree = "<group>"; };
+		FDDE45641C3A4E5A00C39457 /* NSDate+WJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+WJ.m"; sourceTree = "<group>"; };
+		FDDE45651C3A4E5A00C39457 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		FDDE45661C3A4E5A00C39457 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		FDDE45671C3A4E5A00C39457 /* NSString+File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+File.h"; sourceTree = "<group>"; };
+		FDDE45681C3A4E5A00C39457 /* NSString+File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+File.m"; sourceTree = "<group>"; };
+		FDDE45691C3A4E5A00C39457 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		FDDE456A1C3A4E5A00C39457 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		FDDE456B1C3A4E5A00C39457 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		FDDE456C1C3A4E5A00C39457 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		FDDE456D1C3A4E5A00C39457 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		FDDE456E1C3A4E5A00C39457 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +121,12 @@
 		FDA18FB31C3A47E800DFA1D1 /* 漳州公积金 */ = {
 			isa = PBXGroup;
 			children = (
-				FDA18FB71C3A47E800DFA1D1 /* AppDelegate.h */,
-				FDA18FB81C3A47E800DFA1D1 /* AppDelegate.m */,
+				FDDE455A1C3A4E5A00C39457 /* Classes */,
 				FDA18FBA1C3A47E800DFA1D1 /* ViewController.h */,
 				FDA18FBB1C3A47E800DFA1D1 /* ViewController.m */,
 				FDA18FBD1C3A47E800DFA1D1 /* Main.storyboard */,
 				FDA18FC01C3A47E800DFA1D1 /* Assets.xcassets */,
 				FDA18FC21C3A47E800DFA1D1 /* LaunchScreen.storyboard */,
-				FDA18FC51C3A47E800DFA1D1 /* Info.plist */,
 				FDA18FB41C3A47E800DFA1D1 /* Supporting Files */,
 			);
 			path = "漳州公积金";
@@ -117,7 +135,7 @@
 		FDA18FB41C3A47E800DFA1D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FDA18FB51C3A47E800DFA1D1 /* main.m */,
+				FDA18FC51C3A47E800DFA1D1 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +156,229 @@
 				FDA18FDB1C3A47E800DFA1D1 /* Info.plist */,
 			);
 			path = "漳州公积金UITests";
+			sourceTree = "<group>";
+		};
+		FDDE455A1C3A4E5A00C39457 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FDDE455B1C3A4E5A00C39457 /* Home(首页) */,
+				FDDE45601C3A4E5A00C39457 /* Main(主要) */,
+				FDDE45751C3A4E5A00C39457 /* Mine(个人中心) */,
+				FDDE457B1C3A4E5A00C39457 /* Services(便民服务) */,
+				FDDE45811C3A4E5A00C39457 /* Settings(设置) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FDDE455B1C3A4E5A00C39457 /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				FDDE455C1C3A4E5A00C39457 /* Controller */,
+				FDDE455D1C3A4E5A00C39457 /* Model */,
+				FDDE455E1C3A4E5A00C39457 /* Other */,
+				FDDE455F1C3A4E5A00C39457 /* View */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		FDDE455C1C3A4E5A00C39457 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FDDE455D1C3A4E5A00C39457 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FDDE455E1C3A4E5A00C39457 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		FDDE455F1C3A4E5A00C39457 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FDDE45601C3A4E5A00C39457 /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				FDDE45611C3A4E5A00C39457 /* Category */,
+				FDDE456F1C3A4E5A00C39457 /* Controller */,
+				FDDE45701C3A4E5A00C39457 /* Lib */,
+				FDDE45711C3A4E5A00C39457 /* Model */,
+				FDDE45721C3A4E5A00C39457 /* Other */,
+				FDDE45731C3A4E5A00C39457 /* Tool */,
+				FDDE45741C3A4E5A00C39457 /* View */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		FDDE45611C3A4E5A00C39457 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				FDDE45621C3A4E5A00C39457 /* Foundation+Log.m */,
+				FDDE45631C3A4E5A00C39457 /* NSDate+WJ.h */,
+				FDDE45641C3A4E5A00C39457 /* NSDate+WJ.m */,
+				FDDE45651C3A4E5A00C39457 /* NSString+Emoji.h */,
+				FDDE45661C3A4E5A00C39457 /* NSString+Emoji.m */,
+				FDDE45671C3A4E5A00C39457 /* NSString+File.h */,
+				FDDE45681C3A4E5A00C39457 /* NSString+File.m */,
+				FDDE45691C3A4E5A00C39457 /* UIBarButtonItem+Extension.h */,
+				FDDE456A1C3A4E5A00C39457 /* UIBarButtonItem+Extension.m */,
+				FDDE456B1C3A4E5A00C39457 /* UIImage+Extension.h */,
+				FDDE456C1C3A4E5A00C39457 /* UIImage+Extension.m */,
+				FDDE456D1C3A4E5A00C39457 /* UIView+Extension.h */,
+				FDDE456E1C3A4E5A00C39457 /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		FDDE456F1C3A4E5A00C39457 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FDDE45701C3A4E5A00C39457 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		FDDE45711C3A4E5A00C39457 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FDDE45721C3A4E5A00C39457 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FDA18FB51C3A47E800DFA1D1 /* main.m */,
+				FDA18FB71C3A47E800DFA1D1 /* AppDelegate.h */,
+				FDA18FB81C3A47E800DFA1D1 /* AppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		FDDE45731C3A4E5A00C39457 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		FDDE45741C3A4E5A00C39457 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FDDE45751C3A4E5A00C39457 /* Mine(个人中心) */ = {
+			isa = PBXGroup;
+			children = (
+				FDDE45761C3A4E5A00C39457 /* Controller */,
+				FDDE45791C3A4E5A00C39457 /* Model */,
+				FDDE457A1C3A4E5A00C39457 /* View */,
+			);
+			path = "Mine(个人中心)";
+			sourceTree = "<group>";
+		};
+		FDDE45761C3A4E5A00C39457 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FDDE45791C3A4E5A00C39457 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FDDE457A1C3A4E5A00C39457 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FDDE457B1C3A4E5A00C39457 /* Services(便民服务) */ = {
+			isa = PBXGroup;
+			children = (
+				FDDE457C1C3A4E5A00C39457 /* Controller */,
+				FDDE457F1C3A4E5A00C39457 /* Model */,
+				FDDE45801C3A4E5A00C39457 /* View */,
+			);
+			path = "Services(便民服务)";
+			sourceTree = "<group>";
+		};
+		FDDE457C1C3A4E5A00C39457 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FDDE457F1C3A4E5A00C39457 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FDDE45801C3A4E5A00C39457 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FDDE45811C3A4E5A00C39457 /* Settings(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				FDDE45821C3A4E5A00C39457 /* Controller */,
+				FDDE45851C3A4E5A00C39457 /* Model */,
+				FDDE45861C3A4E5A00C39457 /* View */,
+			);
+			path = "Settings(设置)";
+			sourceTree = "<group>";
+		};
+		FDDE45821C3A4E5A00C39457 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FDDE45851C3A4E5A00C39457 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FDDE45861C3A4E5A00C39457 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +511,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDDE458D1C3A4E5A00C39457 /* UIView+Extension.m in Sources */,
+				FDDE45891C3A4E5A00C39457 /* NSString+Emoji.m in Sources */,
 				FDA18FBC1C3A47E800DFA1D1 /* ViewController.m in Sources */,
 				FDA18FB91C3A47E800DFA1D1 /* AppDelegate.m in Sources */,
+				FDDE458A1C3A4E5A00C39457 /* NSString+File.m in Sources */,
+				FDDE458B1C3A4E5A00C39457 /* UIBarButtonItem+Extension.m in Sources */,
 				FDA18FB61C3A47E800DFA1D1 /* main.m in Sources */,
+				FDDE458C1C3A4E5A00C39457 /* UIImage+Extension.m in Sources */,
+				FDDE45871C3A4E5A00C39457 /* Foundation+Log.m in Sources */,
+				FDDE45881C3A4E5A00C39457 /* NSDate+WJ.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +746,7 @@
 				FDA18FE01C3A47E800DFA1D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDA18FE11C3A47E800DFA1D1 /* Build configuration list for PBXNativeTarget "漳州公积金Tests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +755,7 @@
 				FDA18FE31C3A47E800DFA1D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDA18FE41C3A47E800DFA1D1 /* Build configuration list for PBXNativeTarget "漳州公积金UITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +764,7 @@
 				FDA18FE61C3A47E800DFA1D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
