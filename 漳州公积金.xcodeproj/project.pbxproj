@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDA18FB61C3A47E800DFA1D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA18FB51C3A47E800DFA1D1 /* main.m */; };
+		FDA18FB91C3A47E800DFA1D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA18FB81C3A47E800DFA1D1 /* AppDelegate.m */; };
+		FDA18FBC1C3A47E800DFA1D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA18FBB1C3A47E800DFA1D1 /* ViewController.m */; };
+		FDA18FBF1C3A47E800DFA1D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA18FBD1C3A47E800DFA1D1 /* Main.storyboard */; };
+		FDA18FC11C3A47E800DFA1D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA18FC01C3A47E800DFA1D1 /* Assets.xcassets */; };
+		FDA18FC41C3A47E800DFA1D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA18FC21C3A47E800DFA1D1 /* LaunchScreen.storyboard */; };
+		FDA18FCF1C3A47E800DFA1D1 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA18FCE1C3A47E800DFA1D1 /* _____Tests.m */; };
+		FDA18FDA1C3A47E800DFA1D1 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA18FD91C3A47E800DFA1D1 /* _____UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDA18FCB1C3A47E800DFA1D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDA18FA91C3A47E800DFA1D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDA18FB01C3A47E800DFA1D1;
+			remoteInfo = "漳州公积金";
+		};
+		FDA18FD61C3A47E800DFA1D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDA18FA91C3A47E800DFA1D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDA18FB01C3A47E800DFA1D1;
+			remoteInfo = "漳州公积金";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FDA18FB11C3A47E800DFA1D1 /* 漳州公积金.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "漳州公积金.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA18FB51C3A47E800DFA1D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FDA18FB71C3A47E800DFA1D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FDA18FB81C3A47E800DFA1D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FDA18FBA1C3A47E800DFA1D1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FDA18FBB1C3A47E800DFA1D1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FDA18FBE1C3A47E800DFA1D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDA18FC01C3A47E800DFA1D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDA18FC31C3A47E800DFA1D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDA18FC51C3A47E800DFA1D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDA18FCA1C3A47E800DFA1D1 /* 漳州公积金Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "漳州公积金Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA18FCE1C3A47E800DFA1D1 /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____Tests.m"; sourceTree = "<group>"; };
+		FDA18FD01C3A47E800DFA1D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDA18FD51C3A47E800DFA1D1 /* 漳州公积金UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "漳州公积金UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA18FD91C3A47E800DFA1D1 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
+		FDA18FDB1C3A47E800DFA1D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDA18FAE1C3A47E800DFA1D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA18FC71C3A47E800DFA1D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA18FD21C3A47E800DFA1D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDA18FA81C3A47E800DFA1D1 = {
+			isa = PBXGroup;
+			children = (
+				FDA18FB31C3A47E800DFA1D1 /* 漳州公积金 */,
+				FDA18FCD1C3A47E800DFA1D1 /* 漳州公积金Tests */,
+				FDA18FD81C3A47E800DFA1D1 /* 漳州公积金UITests */,
+				FDA18FB21C3A47E800DFA1D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDA18FB21C3A47E800DFA1D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDA18FB11C3A47E800DFA1D1 /* 漳州公积金.app */,
+				FDA18FCA1C3A47E800DFA1D1 /* 漳州公积金Tests.xctest */,
+				FDA18FD51C3A47E800DFA1D1 /* 漳州公积金UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDA18FB31C3A47E800DFA1D1 /* 漳州公积金 */ = {
+			isa = PBXGroup;
+			children = (
+				FDA18FB71C3A47E800DFA1D1 /* AppDelegate.h */,
+				FDA18FB81C3A47E800DFA1D1 /* AppDelegate.m */,
+				FDA18FBA1C3A47E800DFA1D1 /* ViewController.h */,
+				FDA18FBB1C3A47E800DFA1D1 /* ViewController.m */,
+				FDA18FBD1C3A47E800DFA1D1 /* Main.storyboard */,
+				FDA18FC01C3A47E800DFA1D1 /* Assets.xcassets */,
+				FDA18FC21C3A47E800DFA1D1 /* LaunchScreen.storyboard */,
+				FDA18FC51C3A47E800DFA1D1 /* Info.plist */,
+				FDA18FB41C3A47E800DFA1D1 /* Supporting Files */,
+			);
+			path = "漳州公积金";
+			sourceTree = "<group>";
+		};
+		FDA18FB41C3A47E800DFA1D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDA18FB51C3A47E800DFA1D1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDA18FCD1C3A47E800DFA1D1 /* 漳州公积金Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FDA18FCE1C3A47E800DFA1D1 /* _____Tests.m */,
+				FDA18FD01C3A47E800DFA1D1 /* Info.plist */,
+			);
+			path = "漳州公积金Tests";
+			sourceTree = "<group>";
+		};
+		FDA18FD81C3A47E800DFA1D1 /* 漳州公积金UITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDA18FD91C3A47E800DFA1D1 /* _____UITests.m */,
+				FDA18FDB1C3A47E800DFA1D1 /* Info.plist */,
+			);
+			path = "漳州公积金UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDA18FB01C3A47E800DFA1D1 /* 漳州公积金 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDA18FDE1C3A47E800DFA1D1 /* Build configuration list for PBXNativeTarget "漳州公积金" */;
+			buildPhases = (
+				FDA18FAD1C3A47E800DFA1D1 /* Sources */,
+				FDA18FAE1C3A47E800DFA1D1 /* Frameworks */,
+				FDA18FAF1C3A47E800DFA1D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "漳州公积金";
+			productName = "漳州公积金";
+			productReference = FDA18FB11C3A47E800DFA1D1 /* 漳州公积金.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDA18FC91C3A47E800DFA1D1 /* 漳州公积金Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDA18FE11C3A47E800DFA1D1 /* Build configuration list for PBXNativeTarget "漳州公积金Tests" */;
+			buildPhases = (
+				FDA18FC61C3A47E800DFA1D1 /* Sources */,
+				FDA18FC71C3A47E800DFA1D1 /* Frameworks */,
+				FDA18FC81C3A47E800DFA1D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDA18FCC1C3A47E800DFA1D1 /* PBXTargetDependency */,
+			);
+			name = "漳州公积金Tests";
+			productName = "漳州公积金Tests";
+			productReference = FDA18FCA1C3A47E800DFA1D1 /* 漳州公积金Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDA18FD41C3A47E800DFA1D1 /* 漳州公积金UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDA18FE41C3A47E800DFA1D1 /* Build configuration list for PBXNativeTarget "漳州公积金UITests" */;
+			buildPhases = (
+				FDA18FD11C3A47E800DFA1D1 /* Sources */,
+				FDA18FD21C3A47E800DFA1D1 /* Frameworks */,
+				FDA18FD31C3A47E800DFA1D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDA18FD71C3A47E800DFA1D1 /* PBXTargetDependency */,
+			);
+			name = "漳州公积金UITests";
+			productName = "漳州公积金UITests";
+			productReference = FDA18FD51C3A47E800DFA1D1 /* 漳州公积金UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDA18FA91C3A47E800DFA1D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "vision-soft";
+				TargetAttributes = {
+					FDA18FB01C3A47E800DFA1D1 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					FDA18FC91C3A47E800DFA1D1 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FDA18FB01C3A47E800DFA1D1;
+					};
+					FDA18FD41C3A47E800DFA1D1 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FDA18FB01C3A47E800DFA1D1;
+					};
+				};
+			};
+			buildConfigurationList = FDA18FAC1C3A47E800DFA1D1 /* Build configuration list for PBXProject "漳州公积金" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDA18FA81C3A47E800DFA1D1;
+			productRefGroup = FDA18FB21C3A47E800DFA1D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDA18FB01C3A47E800DFA1D1 /* 漳州公积金 */,
+				FDA18FC91C3A47E800DFA1D1 /* 漳州公积金Tests */,
+				FDA18FD41C3A47E800DFA1D1 /* 漳州公积金UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDA18FAF1C3A47E800DFA1D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA18FC41C3A47E800DFA1D1 /* LaunchScreen.storyboard in Resources */,
+				FDA18FC11C3A47E800DFA1D1 /* Assets.xcassets in Resources */,
+				FDA18FBF1C3A47E800DFA1D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA18FC81C3A47E800DFA1D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA18FD31C3A47E800DFA1D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDA18FAD1C3A47E800DFA1D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA18FBC1C3A47E800DFA1D1 /* ViewController.m in Sources */,
+				FDA18FB91C3A47E800DFA1D1 /* AppDelegate.m in Sources */,
+				FDA18FB61C3A47E800DFA1D1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA18FC61C3A47E800DFA1D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA18FCF1C3A47E800DFA1D1 /* _____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA18FD11C3A47E800DFA1D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA18FDA1C3A47E800DFA1D1 /* _____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDA18FCC1C3A47E800DFA1D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDA18FB01C3A47E800DFA1D1 /* 漳州公积金 */;
+			targetProxy = FDA18FCB1C3A47E800DFA1D1 /* PBXContainerItemProxy */;
+		};
+		FDA18FD71C3A47E800DFA1D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDA18FB01C3A47E800DFA1D1 /* 漳州公积金 */;
+			targetProxy = FDA18FD61C3A47E800DFA1D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDA18FBD1C3A47E800DFA1D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDA18FBE1C3A47E800DFA1D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDA18FC21C3A47E800DFA1D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDA18FC31C3A47E800DFA1D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDA18FDC1C3A47E800DFA1D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDA18FDD1C3A47E800DFA1D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDA18FDF1C3A47E800DFA1D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "漳州公积金/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.vision-soft.zzgjj.-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FDA18FE01C3A47E800DFA1D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "漳州公积金/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.vision-soft.zzgjj.-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FDA18FE21C3A47E800DFA1D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "漳州公积金Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.vision-soft.zzgjj.-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/漳州公积金.app/漳州公积金";
+			};
+			name = Debug;
+		};
+		FDA18FE31C3A47E800DFA1D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "漳州公积金Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.vision-soft.zzgjj.-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/漳州公积金.app/漳州公积金";
+			};
+			name = Release;
+		};
+		FDA18FE51C3A47E800DFA1D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "漳州公积金UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.vision-soft.zzgjj.-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "漳州公积金";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FDA18FE61C3A47E800DFA1D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "漳州公积金UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.vision-soft.zzgjj.-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "漳州公积金";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDA18FAC1C3A47E800DFA1D1 /* Build configuration list for PBXProject "漳州公积金" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA18FDC1C3A47E800DFA1D1 /* Debug */,
+				FDA18FDD1C3A47E800DFA1D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDA18FDE1C3A47E800DFA1D1 /* Build configuration list for PBXNativeTarget "漳州公积金" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA18FDF1C3A47E800DFA1D1 /* Debug */,
+				FDA18FE01C3A47E800DFA1D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FDA18FE11C3A47E800DFA1D1 /* Build configuration list for PBXNativeTarget "漳州公积金Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA18FE21C3A47E800DFA1D1 /* Debug */,
+				FDA18FE31C3A47E800DFA1D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FDA18FE41C3A47E800DFA1D1 /* Build configuration list for PBXNativeTarget "漳州公积金UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA18FE51C3A47E800DFA1D1 /* Debug */,
+				FDA18FE61C3A47E800DFA1D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDA18FA91C3A47E800DFA1D1 /* Project object */;
+}
