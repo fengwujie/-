@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WJTabBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // 1.创建窗口
+    self.window = [[UIWindow alloc] init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    
+    // 2.显示窗口(成为主窗口)
+    [self.window makeKeyAndVisible];
+
+    self.window.rootViewController = [[WJTabBarViewController alloc] init];
     return YES;
 }
 

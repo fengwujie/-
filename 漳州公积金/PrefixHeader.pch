@@ -1,0 +1,42 @@
+//
+//  PrefixHeader.pch
+//  漳州公积金
+//
+//  Created by fengwujie on 16/1/4.
+//  Copyright © 2016年 vision-soft. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIImage+Extension.h"
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+
+
+#ifdef DEBUG // 调试状态, 打开LOG功能
+#define WJLog(...) NSLog(__VA_ARGS__)
+#else // 发布状态, 关闭LOG功能
+#define WJLog(...)
+#endif
+
+// 颜色
+#define WJColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+// 随机色
+#define WJRandomColor WJColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+// 全局背景色
+#define WJGlobalBg WJColor(211, 211, 211)
+// 是否大于iOS7
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+// 是否为4inch
+#define FourInch ([UIScreen mainScreen].bounds.size.height == 568.0)
+
+// 导航栏标题的字体
+#define WJNavigationTitleFont [UIFont boldSystemFontOfSize:20]
+
+
+
+#endif /* PrefixHeader_pch */
