@@ -135,6 +135,7 @@
     else if ([btn isEqual:self.tqzn]) {   //提取指南
         webVC.strUrl = @"http://www.mi.com";
     }
+    webVC.title = btn.titleLabel.text;
     [self.navigationController pushViewController:webVC animated:YES];
 }
 

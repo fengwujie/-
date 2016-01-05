@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WJCommonViewController.h"
 
-@interface WJSettingsViewController : UIViewController
+@interface WJSettingsViewController : WJCommonViewController
 
 @end
