@@ -16,6 +16,10 @@
 @property (nonatomic, strong) UIButton *dkzn;
 /** 提取指南 */
 @property (nonatomic, strong) UIButton *tqzn;
+/** 政策法规 */
+@property (nonatomic, strong) UIButton *zcfg;
+/** 办事指南 */
+@property (nonatomic, strong) UIButton *bszn;
 
 @end
 
@@ -74,6 +78,7 @@
     // 2.2添加“政策法规”
     UIButton *zcfg = [[UIButton alloc]init];
     [gridView addSubview:zcfg];
+    self.zcfg = zcfg;
     zcfg.x = margin + CGRectGetMaxX(gjj.frame);
     zcfg.y = gjj.y;
     zcfg.width = gjj.width;
@@ -81,10 +86,12 @@
     [zcfg setTitle:@"政策法规" forState:UIControlStateNormal];
     [zcfg setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     zcfg.backgroundColor = WJColor(0, 200, 0);
+    [zcfg addTarget:self action:@selector(runWindow:) forControlEvents:UIControlEventTouchUpInside];
     
     // 2.3添加“办事指南”
     UIButton *bszn = [[UIButton alloc]init];
     [gridView addSubview:bszn];
+    self.bszn = bszn;
     bszn.x = margin;
     bszn.y = margin + CGRectGetMaxY(gjj.frame);
     bszn.width = gjj.width;
@@ -92,6 +99,7 @@
     [bszn setTitle:@"办事指南" forState:UIControlStateNormal];
     [bszn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     bszn.backgroundColor = WJColor(0, 0, 200);
+    [bszn addTarget:self action:@selector(runWindow:) forControlEvents:UIControlEventTouchUpInside];
     
     // 2.4添加“贷款指南”
     UIButton *dkzn = [[UIButton alloc]init];
@@ -114,7 +122,7 @@
     tqzn.y = margin + CGRectGetMaxY(dkzn.frame);
     tqzn.width = dkzn.width;
     tqzn.height = dkzn.height;
-    [tqzn setTitle:@"贷款指南" forState:UIControlStateNormal];
+    [tqzn setTitle:@"提取指南" forState:UIControlStateNormal];
     [tqzn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     tqzn.backgroundColor = WJColor(80, 180, 80);
     [tqzn addTarget:self action:@selector(runWeb:) forControlEvents:UIControlEventTouchUpInside];
@@ -127,17 +135,30 @@
 {
     WJWebViewController *webVC = [[WJWebViewController alloc] init];
     if ([btn isEqual:self.gjj]) {   //我的公积金
-        webVC.strUrl = @"https://www.baidu.com";
+        webVC.strUrl = WJUrlGJJ;
     }
     else if ([btn isEqual:self.dkzn]) {  //贷款指南
-        webVC.strUrl = @"http://www.jd.com";
+        webVC.strUrl = WJUrlDKZN;
     }
     else if ([btn isEqual:self.tqzn]) {   //提取指南
-        webVC.strUrl = @"http://www.mi.com";
+        webVC.strUrl = WJUrlTQZN;
     }
     webVC.title = btn.titleLabel.text;
     [self.navigationController pushViewController:webVC animated:YES];
 }
-
-
+/**
+ *  跳转窗体
+ */
+- (void)runWindow:(UIButton *)btn
+{
+    WJWebViewController *webVC = [[WJWebViewController alloc] init];
+    if ([btn isEqual:self.zcfg]) {   //政策法规
+        webVC.strUrl = @"https://www.baidu.com";
+    }
+    else if ([btn isEqual:self.bszn]) {  //办事指南
+        webVC.strUrl = @"http://www.jd.com";
+    }
+    webVC.title = btn.titleLabel.text;
+    [self.navigationController pushViewController:webVC animated:YES];
+}
 @end

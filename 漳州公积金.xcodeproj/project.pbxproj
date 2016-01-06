@@ -61,10 +61,13 @@
 		FDA18FC41C3A47E800DFA1D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA18FC21C3A47E800DFA1D1 /* LaunchScreen.storyboard */; };
 		FDA18FCF1C3A47E800DFA1D1 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA18FCE1C3A47E800DFA1D1 /* _____Tests.m */; };
 		FDA18FDA1C3A47E800DFA1D1 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA18FD91C3A47E800DFA1D1 /* _____UITests.m */; };
-		FDCF78841C3B9C6300B98AD0 /* WJVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF78831C3B9C6300B98AD0 /* WJVersion.m */; };
 		FDCF788E1C3BB42000B98AD0 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF788A1C3BB42000B98AD0 /* MBProgressHUD+MJ.m */; };
 		FDCF788F1C3BB42000B98AD0 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FDCF788B1C3BB42000B98AD0 /* MBProgressHUD.bundle */; };
 		FDCF78901C3BB42000B98AD0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF788D1C3BB42000B98AD0 /* MBProgressHUD.m */; };
+		FDCF78961C3CBB7500B98AD0 /* WJCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF78951C3CBB7500B98AD0 /* WJCalculatorViewController.m */; };
+		FDCF789A1C3CBE1300B98AD0 /* WJVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF78991C3CBE1300B98AD0 /* WJVersion.m */; };
+		FDCF789E1C3CBEBA00B98AD0 /* WJNews.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF789D1C3CBEBA00B98AD0 /* WJNews.m */; };
+		FDCF78A11C3CE1FE00B98AD0 /* WJNewsCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF78A01C3CE1FE00B98AD0 /* WJNewsCommonCell.m */; };
 		FDDE45871C3A4E5A00C39457 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDE45621C3A4E5A00C39457 /* Foundation+Log.m */; };
 		FDDE45881C3A4E5A00C39457 /* NSDate+WJ.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDE45641C3A4E5A00C39457 /* NSDate+WJ.m */; };
 		FDDE45891C3A4E5A00C39457 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDE45661C3A4E5A00C39457 /* NSString+Emoji.m */; };
@@ -212,13 +215,19 @@
 		FDA18FD51C3A47E800DFA1D1 /* 漳州公积金UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "漳州公积金UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA18FD91C3A47E800DFA1D1 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		FDA18FDB1C3A47E800DFA1D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDCF78821C3B9C6300B98AD0 /* WJVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJVersion.h; sourceTree = "<group>"; };
-		FDCF78831C3B9C6300B98AD0 /* WJVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJVersion.m; sourceTree = "<group>"; };
 		FDCF78891C3BB42000B98AD0 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
 		FDCF788A1C3BB42000B98AD0 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		FDCF788B1C3BB42000B98AD0 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		FDCF788C1C3BB42000B98AD0 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		FDCF788D1C3BB42000B98AD0 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		FDCF78941C3CBB7500B98AD0 /* WJCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJCalculatorViewController.h; sourceTree = "<group>"; };
+		FDCF78951C3CBB7500B98AD0 /* WJCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJCalculatorViewController.m; sourceTree = "<group>"; };
+		FDCF78981C3CBE1300B98AD0 /* WJVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJVersion.h; sourceTree = "<group>"; };
+		FDCF78991C3CBE1300B98AD0 /* WJVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJVersion.m; sourceTree = "<group>"; };
+		FDCF789C1C3CBEBA00B98AD0 /* WJNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJNews.h; sourceTree = "<group>"; };
+		FDCF789D1C3CBEBA00B98AD0 /* WJNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJNews.m; sourceTree = "<group>"; };
+		FDCF789F1C3CE1FE00B98AD0 /* WJNewsCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJNewsCommonCell.h; sourceTree = "<group>"; };
+		FDCF78A01C3CE1FE00B98AD0 /* WJNewsCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJNewsCommonCell.m; sourceTree = "<group>"; };
 		FDDE45621C3A4E5A00C39457 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		FDDE45631C3A4E5A00C39457 /* NSDate+WJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+WJ.h"; sourceTree = "<group>"; };
 		FDDE45641C3A4E5A00C39457 /* NSDate+WJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+WJ.m"; sourceTree = "<group>"; };
@@ -501,16 +510,6 @@
 			path = "漳州公积金UITests";
 			sourceTree = "<group>";
 		};
-		FDCF78811C3B9C3E00B98AD0 /* Version */ = {
-			isa = PBXGroup;
-			children = (
-				FDCF78821C3B9C6300B98AD0 /* WJVersion.h */,
-				FDCF78831C3B9C6300B98AD0 /* WJVersion.m */,
-			);
-			name = Version;
-			path = Common/Version;
-			sourceTree = "<group>";
-		};
 		FDCF78881C3BB42000B98AD0 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -521,6 +520,24 @@
 				FDCF788D1C3BB42000B98AD0 /* MBProgressHUD.m */,
 			);
 			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		FDCF78971C3CBE1300B98AD0 /* Version */ = {
+			isa = PBXGroup;
+			children = (
+				FDCF78981C3CBE1300B98AD0 /* WJVersion.h */,
+				FDCF78991C3CBE1300B98AD0 /* WJVersion.m */,
+			);
+			path = Version;
+			sourceTree = "<group>";
+		};
+		FDCF789B1C3CBE7100B98AD0 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				FDCF789C1C3CBEBA00B98AD0 /* WJNews.h */,
+				FDCF789D1C3CBEBA00B98AD0 /* WJNews.m */,
+			);
+			path = News;
 			sourceTree = "<group>";
 		};
 		FDDE455A1C3A4E5A00C39457 /* Classes */ = {
@@ -639,7 +656,8 @@
 		FDDE45711C3A4E5A00C39457 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FDCF78811C3B9C3E00B98AD0 /* Version */,
+				FDCF789B1C3CBE7100B98AD0 /* News */,
+				FDCF78971C3CBE1300B98AD0 /* Version */,
 				FD0C085A1C3A9BE700F6E64A /* Common */,
 			);
 			path = Model;
@@ -731,6 +749,8 @@
 			children = (
 				FDDE45A71C3A563300C39457 /* WJServicesViewController.h */,
 				FDDE45A81C3A563300C39457 /* WJServicesViewController.m */,
+				FDCF78941C3CBB7500B98AD0 /* WJCalculatorViewController.h */,
+				FDCF78951C3CBB7500B98AD0 /* WJCalculatorViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -745,6 +765,8 @@
 		FDDE45801C3A4E5A00C39457 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FDCF789F1C3CE1FE00B98AD0 /* WJNewsCommonCell.h */,
+				FDCF78A01C3CE1FE00B98AD0 /* WJNewsCommonCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -927,14 +949,16 @@
 				FD8D86911C3B8BB10005C75F /* NSString+MJExtension.m in Sources */,
 				FDDE45BD1C3A932B00C39457 /* WJBadgeView.m in Sources */,
 				FD8D866D1C3B6DC50005C75F /* UIScrollView+MJRefresh.m in Sources */,
+				FDCF78961C3CBB7500B98AD0 /* WJCalculatorViewController.m in Sources */,
 				FD8D86971C3B90960005C75F /* WJUpdateTool.m in Sources */,
+				FDCF78A11C3CE1FE00B98AD0 /* WJNewsCommonCell.m in Sources */,
 				FDDE45951C3A539A00C39457 /* WJTabBarViewController.m in Sources */,
-				FDCF78841C3B9C6300B98AD0 /* WJVersion.m in Sources */,
 				FD0C08671C3A9BE700F6E64A /* WJCommonArrowItem.m in Sources */,
 				FD8D86881C3B8BB10005C75F /* MJExtensionConst.m in Sources */,
 				FD8D868B1C3B8BB10005C75F /* MJPropertyKey.m in Sources */,
 				FD8D86691C3B6DC50005C75F /* MJRefreshStateHeader.m in Sources */,
 				FD8D865F1C3B6DC50005C75F /* MJRefreshFooter.m in Sources */,
+				FDCF789A1C3CBE1300B98AD0 /* WJVersion.m in Sources */,
 				FDDE45B51C3A6C1F00C39457 /* WJWebViewController.m in Sources */,
 				FD8D86891C3B8BB10005C75F /* MJFoundation.m in Sources */,
 				FD8D86671C3B6DC50005C75F /* MJRefreshGifHeader.m in Sources */,
@@ -979,6 +1003,7 @@
 				FD8D86661C3B6DC50005C75F /* MJRefreshBackStateFooter.m in Sources */,
 				FD8D86681C3B6DC50005C75F /* MJRefreshNormalHeader.m in Sources */,
 				FD8D86561C3B6DC50005C75F /* AFHTTPSessionManager.m in Sources */,
+				FDCF789E1C3CBEBA00B98AD0 /* WJNews.m in Sources */,
 				FD1ED28C1C3AD2F3006FD923 /* WJBaseTool.m in Sources */,
 				FD8D865C1C3B6DC50005C75F /* MJRefreshAutoFooter.m in Sources */,
 				FD8D86631C3B6DC50005C75F /* MJRefreshAutoStateFooter.m in Sources */,

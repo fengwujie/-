@@ -37,6 +37,15 @@
 // 导航栏标题的字体
 #define WJNavigationTitleFont [UIFont boldSystemFontOfSize:20]
 
-
+/** 公积金主页 */
+#define WJUrlGJJ @"http://www.baidu.com"
+/** 贷款指南 */
+#define WJUrlDKZN @"http://www.baidu.com"
+/** 提取指南 */
+#define WJUrlTQZN @"http://www.baidu.com"
+/** 开户指南 */
+#define WJUrlKFZN @"http://www.baidu.com"
+/** 公积金利率 */
+#define WJUrlGJJLL @"http://www.baidu.com"
 
 #endif /* PrefixHeader_pch */

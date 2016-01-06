@@ -37,7 +37,7 @@ typedef enum {
     
     // 2.设置属性
     logout.titleLabel.font = [UIFont systemFontOfSize:14];
-    [logout setTitle:@"退出当前帐号" forState:UIControlStateNormal];
+    [logout setTitle:@"退出程序" forState:UIControlStateNormal];
     [logout setTitleColor:WJColor(255, 10, 10) forState:UIControlStateNormal];
     [logout setBackgroundImage:[UIImage resizedImage:@"common_card_background"] forState:UIControlStateNormal];
     [logout setBackgroundImage:[UIImage resizedImage:@"common_card_background_highlighted"] forState:UIControlStateHighlighted];
