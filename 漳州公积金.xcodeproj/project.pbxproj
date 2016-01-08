@@ -61,6 +61,10 @@
 		FDA18FC41C3A47E800DFA1D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA18FC21C3A47E800DFA1D1 /* LaunchScreen.storyboard */; };
 		FDA18FCF1C3A47E800DFA1D1 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA18FCE1C3A47E800DFA1D1 /* _____Tests.m */; };
 		FDA18FDA1C3A47E800DFA1D1 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA18FD91C3A47E800DFA1D1 /* _____UITests.m */; };
+		FDB5EBC81C3F9F080087517D /* WJHomeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5EBC71C3F9F080087517D /* WJHomeButton.m */; };
+		FDB5EBCA1C3FAC630087517D /* WJHomeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB5EBC91C3FAC630087517D /* WJHomeButton.xib */; };
+		FDB5EBCC1C3FB98C0087517D /* WJHomeButtonSmall.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB5EBCB1C3FB98C0087517D /* WJHomeButtonSmall.xib */; };
+		FDB5EBCF1C3FB9B10087517D /* WJHomeButtonSmall.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5EBCE1C3FB9B10087517D /* WJHomeButtonSmall.m */; };
 		FDCF788E1C3BB42000B98AD0 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF788A1C3BB42000B98AD0 /* MBProgressHUD+MJ.m */; };
 		FDCF788F1C3BB42000B98AD0 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FDCF788B1C3BB42000B98AD0 /* MBProgressHUD.bundle */; };
 		FDCF78901C3BB42000B98AD0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF788D1C3BB42000B98AD0 /* MBProgressHUD.m */; };
@@ -68,6 +72,7 @@
 		FDCF789A1C3CBE1300B98AD0 /* WJVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF78991C3CBE1300B98AD0 /* WJVersion.m */; };
 		FDCF789E1C3CBEBA00B98AD0 /* WJNews.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF789D1C3CBEBA00B98AD0 /* WJNews.m */; };
 		FDCF78A11C3CE1FE00B98AD0 /* WJNewsCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF78A01C3CE1FE00B98AD0 /* WJNewsCommonCell.m */; };
+		FDCF78A41C3D0DE200B98AD0 /* WJNewsCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF78A31C3D0DE200B98AD0 /* WJNewsCommonViewController.m */; };
 		FDDE45871C3A4E5A00C39457 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDE45621C3A4E5A00C39457 /* Foundation+Log.m */; };
 		FDDE45881C3A4E5A00C39457 /* NSDate+WJ.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDE45641C3A4E5A00C39457 /* NSDate+WJ.m */; };
 		FDDE45891C3A4E5A00C39457 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDE45661C3A4E5A00C39457 /* NSString+Emoji.m */; };
@@ -215,6 +220,12 @@
 		FDA18FD51C3A47E800DFA1D1 /* 漳州公积金UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "漳州公积金UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA18FD91C3A47E800DFA1D1 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		FDA18FDB1C3A47E800DFA1D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDB5EBC61C3F9F080087517D /* WJHomeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJHomeButton.h; sourceTree = "<group>"; };
+		FDB5EBC71C3F9F080087517D /* WJHomeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJHomeButton.m; sourceTree = "<group>"; };
+		FDB5EBC91C3FAC630087517D /* WJHomeButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJHomeButton.xib; sourceTree = "<group>"; };
+		FDB5EBCB1C3FB98C0087517D /* WJHomeButtonSmall.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJHomeButtonSmall.xib; sourceTree = "<group>"; };
+		FDB5EBCD1C3FB9B10087517D /* WJHomeButtonSmall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJHomeButtonSmall.h; sourceTree = "<group>"; };
+		FDB5EBCE1C3FB9B10087517D /* WJHomeButtonSmall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJHomeButtonSmall.m; sourceTree = "<group>"; };
 		FDCF78891C3BB42000B98AD0 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
 		FDCF788A1C3BB42000B98AD0 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		FDCF788B1C3BB42000B98AD0 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
@@ -228,6 +239,8 @@
 		FDCF789D1C3CBEBA00B98AD0 /* WJNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJNews.m; sourceTree = "<group>"; };
 		FDCF789F1C3CE1FE00B98AD0 /* WJNewsCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJNewsCommonCell.h; sourceTree = "<group>"; };
 		FDCF78A01C3CE1FE00B98AD0 /* WJNewsCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJNewsCommonCell.m; sourceTree = "<group>"; };
+		FDCF78A21C3D0DE200B98AD0 /* WJNewsCommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJNewsCommonViewController.h; sourceTree = "<group>"; };
+		FDCF78A31C3D0DE200B98AD0 /* WJNewsCommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJNewsCommonViewController.m; sourceTree = "<group>"; };
 		FDDE45621C3A4E5A00C39457 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		FDDE45631C3A4E5A00C39457 /* NSDate+WJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+WJ.h"; sourceTree = "<group>"; };
 		FDDE45641C3A4E5A00C39457 /* NSDate+WJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+WJ.m"; sourceTree = "<group>"; };
@@ -589,6 +602,12 @@
 		FDDE455F1C3A4E5A00C39457 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FDB5EBC61C3F9F080087517D /* WJHomeButton.h */,
+				FDB5EBC71C3F9F080087517D /* WJHomeButton.m */,
+				FDB5EBC91C3FAC630087517D /* WJHomeButton.xib */,
+				FDB5EBCB1C3FB98C0087517D /* WJHomeButtonSmall.xib */,
+				FDB5EBCD1C3FB9B10087517D /* WJHomeButtonSmall.h */,
+				FDB5EBCE1C3FB9B10087517D /* WJHomeButtonSmall.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -751,6 +770,8 @@
 				FDDE45A81C3A563300C39457 /* WJServicesViewController.m */,
 				FDCF78941C3CBB7500B98AD0 /* WJCalculatorViewController.h */,
 				FDCF78951C3CBB7500B98AD0 /* WJCalculatorViewController.m */,
+				FDCF78A21C3D0DE200B98AD0 /* WJNewsCommonViewController.h */,
+				FDCF78A31C3D0DE200B98AD0 /* WJNewsCommonViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -910,9 +931,11 @@
 			files = (
 				FDA18FC41C3A47E800DFA1D1 /* LaunchScreen.storyboard in Resources */,
 				FDA18FC11C3A47E800DFA1D1 /* Assets.xcassets in Resources */,
+				FDB5EBCC1C3FB98C0087517D /* WJHomeButtonSmall.xib in Resources */,
 				FDCF788F1C3BB42000B98AD0 /* MBProgressHUD.bundle in Resources */,
 				FD8D866A1C3B6DC50005C75F /* MJRefresh.bundle in Resources */,
 				FDA18FBF1C3A47E800DFA1D1 /* Main.storyboard in Resources */,
+				FDB5EBCA1C3FAC630087517D /* WJHomeButton.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -944,6 +967,7 @@
 				FD8D866C1C3B6DC50005C75F /* UIScrollView+MJExtension.m in Sources */,
 				FDDE45891C3A4E5A00C39457 /* NSString+Emoji.m in Sources */,
 				FDDE45B21C3A56A700C39457 /* WJTabBar.m in Sources */,
+				FDB5EBCF1C3FB9B10087517D /* WJHomeButtonSmall.m in Sources */,
 				FD8D86621C3B6DC50005C75F /* MJRefreshAutoNormalFooter.m in Sources */,
 				FDCF788E1C3BB42000B98AD0 /* MBProgressHUD+MJ.m in Sources */,
 				FD8D86911C3B8BB10005C75F /* NSString+MJExtension.m in Sources */,
@@ -968,6 +992,7 @@
 				FD0C086A1C3A9BE700F6E64A /* WJCommonItem.m in Sources */,
 				FD8D86651C3B6DC50005C75F /* MJRefreshBackNormalFooter.m in Sources */,
 				FD8D865A1C3B6DC50005C75F /* AFURLResponseSerialization.m in Sources */,
+				FDB5EBC81C3F9F080087517D /* WJHomeButton.m in Sources */,
 				FD8D868E1C3B8BB10005C75F /* NSObject+MJCoding.m in Sources */,
 				FDDE45A61C3A561700C39457 /* WJSettingsViewController.m in Sources */,
 				FD0C08681C3A9BE700F6E64A /* WJCommonCenterItem.m in Sources */,
@@ -990,6 +1015,7 @@
 				FD8D868F1C3B8BB10005C75F /* NSObject+MJKeyValue.m in Sources */,
 				FD8D86871C3B8BB10005C75F /* MJDictionaryCache.m in Sources */,
 				FD8D865E1C3B6DC50005C75F /* MJRefreshComponent.m in Sources */,
+				FDCF78A41C3D0DE200B98AD0 /* WJNewsCommonViewController.m in Sources */,
 				FDDE45AC1C3A564D00C39457 /* WJMineViewController.m in Sources */,
 				FDA18FB61C3A47E800DFA1D1 /* main.m in Sources */,
 				FD0C086C1C3A9BE700F6E64A /* WJCommonSwitchItem.m in Sources */,
@@ -1148,6 +1174,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/漳州公积金/PrefixHeader.pch";
 				INFOPLIST_FILE = "漳州公积金/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1161,6 +1188,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/漳州公积金/PrefixHeader.pch";
 				INFOPLIST_FILE = "漳州公积金/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WJWebViewController.h"
 
-@interface WJMineViewController : UIViewController
+@interface WJMineViewController : WJWebViewController
 
 @end

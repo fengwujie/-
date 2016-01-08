@@ -16,11 +16,15 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        if (!iOS7) {
-            self.backgroundImage = [UIImage imageWithName:@"tabbar_background"];
-        }
-        self.selectionIndicatorImage = [UIImage imageWithName:@"navigationbar_button_background"];
-        
+//        if (!iOS7) {
+//            self.backgroundImage = [UIImage imageWithName:@"tabbar_background"];
+//        }
+//        self.selectionIndicatorImage = [UIImage imageWithName:@"navigationbar_button_background"];
+        [self setBackgroundColor:WJColor(23, 141, 218)];
+        self.backgroundImage  = [UIImage resizedImage:@"home_bottom"];
+        //self.backgroundImage  = [UIImage resizedImage:@"tabbar_compose_button"];
+        //WJLog(@"%@",NSStringFromCGRect(self.frame));
+        //self.backgroundColor = [UIColor blueColor];
 //        // 添加加号按钮
 //        [self setupPlusButton];
     }
@@ -67,6 +71,7 @@
     
 //    // 设置所有tabbarButton的frame
 //    [self setupAllTabBarButtonsFrame];
+    //WJLog(@"%@",NSStringFromCGRect(self.frame));
 }
 
 ///**

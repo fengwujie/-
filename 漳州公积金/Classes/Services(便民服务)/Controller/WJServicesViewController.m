@@ -29,7 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = WJRandomColor;
+    self.view.backgroundColor = WJGlobalBg;
     [self setup];
 }
 
@@ -60,7 +60,7 @@
     dkzn.height = dkzn.width * multiple;
     [dkzn setTitle:@"贷款指南" forState:UIControlStateNormal];
     [dkzn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    dkzn.backgroundColor = WJColor(80, 80, 150);
+    dkzn.backgroundColor = WJColorDKZN;
     [dkzn addTarget:self action:@selector(runWeb:) forControlEvents:UIControlEventTouchUpInside];
     
     // 2.2添加“提取指南”
@@ -73,7 +73,7 @@
     tqzn.height = tqzn.width * multiple;
     [tqzn setTitle:@"提取指南" forState:UIControlStateNormal];
     [tqzn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    tqzn.backgroundColor = WJColor(80, 180, 80);
+    tqzn.backgroundColor = WJColorTQZN;
     [tqzn addTarget:self action:@selector(runWeb:) forControlEvents:UIControlEventTouchUpInside];
     
     // 2.3添加“开户指南”

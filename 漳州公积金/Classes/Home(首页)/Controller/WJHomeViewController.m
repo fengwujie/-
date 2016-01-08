@@ -8,18 +8,20 @@
 
 #import "WJHomeViewController.h"
 #import "WJWebViewController.h"
+#import "WJHomeButton.h"
+#import "WJHomeButtonSmall.h"
 
 @interface WJHomeViewController ()
 /** 我的公积金 */
-@property (nonatomic, strong) UIButton *gjj;
+@property (nonatomic, strong) WJHomeButton *gjj;
 /** 贷款指南 */
-@property (nonatomic, strong) UIButton *dkzn;
+@property (nonatomic, strong) WJHomeButtonSmall *dkzn;
 /** 提取指南 */
-@property (nonatomic, strong) UIButton *tqzn;
+@property (nonatomic, strong) WJHomeButtonSmall *tqzn;
 /** 政策法规 */
-@property (nonatomic, strong) UIButton *zcfg;
+@property (nonatomic, strong) WJHomeButton *zcfg;
 /** 办事指南 */
-@property (nonatomic, strong) UIButton *bszn;
+@property (nonatomic, strong) WJHomeButton *bszn;
 
 @end
 
@@ -27,10 +29,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = WJGlobalBg;
     UIButton *titleView = [[UIButton alloc] init];
     [titleView setTitle:@"漳州市住房公积金管理中心" forState:UIControlStateNormal];
+    [titleView setImage:[UIImage resizedImage:@"gjj_logo"] forState:UIControlStateNormal];
     [titleView setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [titleView setBackgroundImage: [UIImage imageNamed:@"gjj_logo"] forState:UIControlStateNormal];
     self.navigationItem.titleView = titleView;
     
     [self setup];
@@ -40,14 +44,25 @@
  */
 - (void) setup
 {
+    UIImageView* topView = [[UIImageView alloc] init];
+    [self.view addSubview:topView];
+    topView.x = 0;
+    topView.y = 64;
+    topView.width = self.view.width;
+    topView.height = 50;
+    topView.image = [UIImage imageNamed:@"image_bg"];
+    
     // 1.创建label
     UILabel *topLable = [[UILabel alloc] init];
     [self.view addSubview:topLable];
-    topLable.x = 0;
-    topLable.y = 64;
-    topLable.width = self.view.width;
-    topLable.height = 44;
+    topLable.backgroundColor = [UIColor clearColor];
+    topLable.frame = topView.frame;
+//    topLable.x = 0;
+//    topLable.y = 64;
+//    topLable.width = self.view.width;
+//    topLable.height = 44;
     topLable.numberOfLines = 0;
+    topLable.textColor = WJColor(122, 122, 122);
     topLable.text =@"  尊敬的用户，下午好！\n  欢迎使用漳州市掌上住房公积金";
     
     // 2.创建一个大窗口GridView
@@ -63,69 +78,123 @@
     float margin = 10;   //网格间距
     float multiple = 1.2;  //高度与宽度的位数
     // 2.1添加“我的公积金”
-    UIButton *gjj = [[UIButton alloc]init];
+    WJHomeButton *gjj = [WJHomeButton homeButton];
     [gridView addSubview:gjj];
     self.gjj = gjj;
     gjj.x = margin;
     gjj.y = margin;
     gjj.width = (gridView.width - margin * 3) * 0.5;
     gjj.height = gjj.width * multiple;
-    [gjj setTitle:@"我的公积金" forState:UIControlStateNormal];
-    [gjj setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    gjj.backgroundColor = WJColor(200, 0, 0);
-    [gjj addTarget:self action:@selector(runWeb:) forControlEvents:UIControlEventTouchUpInside];
+    gjj.backgroundColor = WJColor(253, 98, 124);
+    [gjj setImageName:@"ic_my_gjj" text:@"我的公积金"];
+    // 添加手势监听器（一个手势监听器 只能 监听对应的一个view）
+//    UITapGestureRecognizer *recognizerGJJ = [[UITapGestureRecognizer alloc] init];
+//    [recognizerGJJ addTarget:self action:@selector(buttonClick:)];
+//    [gjj addGestureRecognizer:recognizerGJJ];
+    [self addTapGestureRecognizer:gjj];
     
     // 2.2添加“政策法规”
-    UIButton *zcfg = [[UIButton alloc]init];
+    WJHomeButton *zcfg = [WJHomeButton homeButton];
     [gridView addSubview:zcfg];
     self.zcfg = zcfg;
     zcfg.x = margin + CGRectGetMaxX(gjj.frame);
     zcfg.y = gjj.y;
     zcfg.width = gjj.width;
     zcfg.height = zcfg.width * multiple;
-    [zcfg setTitle:@"政策法规" forState:UIControlStateNormal];
-    [zcfg setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    zcfg.backgroundColor = WJColor(0, 200, 0);
-    [zcfg addTarget:self action:@selector(runWindow:) forControlEvents:UIControlEventTouchUpInside];
+    zcfg.backgroundColor = WJColor(98, 194, 3);
+    [zcfg setImageName:@"ic_policy" text:@"政策法规"];
+    // 添加手势监听器（一个手势监听器 只能 监听对应的一个view）
+    [self addTapGestureRecognizer:zcfg];
+//    UITapGestureRecognizer *recognizerZCFG = [[UITapGestureRecognizer alloc] init];
+//    [recognizerZCFG addTarget:self action:@selector(buttonClick:)];
+//    [zcfg addGestureRecognizer:recognizerZCFG];
     
     // 2.3添加“办事指南”
-    UIButton *bszn = [[UIButton alloc]init];
+    WJHomeButton *bszn = [WJHomeButton homeButton];
     [gridView addSubview:bszn];
     self.bszn = bszn;
     bszn.x = margin;
     bszn.y = margin + CGRectGetMaxY(gjj.frame);
     bszn.width = gjj.width;
     bszn.height = bszn.width * multiple;
-    [bszn setTitle:@"办事指南" forState:UIControlStateNormal];
-    [bszn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    bszn.backgroundColor = WJColor(0, 0, 200);
-    [bszn addTarget:self action:@selector(runWindow:) forControlEvents:UIControlEventTouchUpInside];
+    bszn.backgroundColor = WJColor(35, 183, 233);
+    [bszn setImageName:@"ic_loan" text:@"办事指南"];
+    // 添加手势监听器（一个手势监听器 只能 监听对应的一个view）
+    [self addTapGestureRecognizer:bszn];
+//    UITapGestureRecognizer *recognizerBSZN = [[UITapGestureRecognizer alloc] init];
+//    [recognizerBSZN addTarget:self action:@selector(buttonClick:)];
+//    [bszn addGestureRecognizer:recognizerBSZN];
     
     // 2.4添加“贷款指南”
-    UIButton *dkzn = [[UIButton alloc]init];
+    WJHomeButtonSmall *dkzn = [WJHomeButtonSmall homeButtonSmall];
     [gridView addSubview:dkzn];
     self.dkzn = dkzn;
     dkzn.x = margin + CGRectGetMaxX(bszn.frame);
     dkzn.y = bszn.y;
     dkzn.width = bszn.width;
     dkzn.height = (bszn.height - margin) * 0.5;
-    [dkzn setTitle:@"贷款指南" forState:UIControlStateNormal];
-    [dkzn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    dkzn.backgroundColor = WJColor(80, 80, 150);
-    [dkzn addTarget:self action:@selector(runWeb:) forControlEvents:UIControlEventTouchUpInside];
+    dkzn.backgroundColor = WJColorDKZN;
+    [dkzn setImageName:@"ic_guide" text:@"贷款指南"];
+    // 添加手势监听器（一个手势监听器 只能 监听对应的一个view）
+    [self addTapGestureRecognizer:dkzn];
+//    UITapGestureRecognizer *recognizerDKZN= [[UITapGestureRecognizer alloc] init];
+//    [recognizerDKZN addTarget:self action:@selector(buttonClick:)];
+//    [dkzn addGestureRecognizer:recognizerDKZN];
     
     // 2.5添加“提取指南”
-    UIButton *tqzn = [[UIButton alloc]init];
+    WJHomeButtonSmall *tqzn = [WJHomeButtonSmall homeButtonSmall];
     [gridView addSubview:tqzn];
     self.tqzn = tqzn;
     tqzn.x = dkzn.x;
     tqzn.y = margin + CGRectGetMaxY(dkzn.frame);
     tqzn.width = dkzn.width;
     tqzn.height = dkzn.height;
-    [tqzn setTitle:@"提取指南" forState:UIControlStateNormal];
-    [tqzn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    tqzn.backgroundColor = WJColor(80, 180, 80);
-    [tqzn addTarget:self action:@selector(runWeb:) forControlEvents:UIControlEventTouchUpInside];
+    tqzn.backgroundColor = WJColorTQZN;
+    [tqzn setImageName:@"ic_material" text:@"提取指南"];
+    // 添加手势监听器（一个手势监听器 只能 监听对应的一个view）
+    [self addTapGestureRecognizer:tqzn];
+//    UITapGestureRecognizer *recognizerTQZN= [[UITapGestureRecognizer alloc] init];
+//    [recognizerTQZN addTarget:self action:@selector(buttonClick:)];
+//    [tqzn addGestureRecognizer:recognizerTQZN];
+}
+/**
+ *  添加一个手势监听器
+ */
+-(void) addTapGestureRecognizer:(UIView *)view
+{
+    // 添加手势监听器（一个手势监听器 只能 监听对应的一个view）
+    UITapGestureRecognizer *recognizer= [[UITapGestureRecognizer alloc] init];
+    [recognizer addTarget:self action:@selector(buttonClick:)];
+    [view addGestureRecognizer:recognizer];
+}
+
+-(void) buttonClick:(UITapGestureRecognizer *)recognizer
+{
+    UIView *view = recognizer.view;
+    WJWebViewController *webVC = [[WJWebViewController alloc] init];
+    NSString *title;
+    if ([view isEqual:self.gjj]) {   //我的公积金
+        webVC.strUrl = WJUrlGJJ;
+        title = ((WJHomeButton *)view).text;
+    }
+    else if ([view isEqual:self.dkzn]) {  //贷款指南
+        webVC.strUrl = WJUrlDKZN;
+        title = ((WJHomeButtonSmall *)view).text;
+    }
+    else if ([view isEqual:self.tqzn]) {   //提取指南
+        webVC.strUrl = WJUrlTQZN;
+        title = ((WJHomeButtonSmall *)view).text;
+    }
+    else if ([view isEqual:self.zcfg]) {   //政策法规
+        webVC.strUrl = @"https://www.baidu.com";
+        title = ((WJHomeButton *)view).text;
+    }
+    else if ([view isEqual:self.bszn]) {  //办事指南
+        webVC.strUrl = @"http://www.jd.com";
+        title = ((WJHomeButton *)view).text;
+    }
+    webVC.title = title;
+    [self.navigationController pushViewController:webVC animated:YES];
 }
 
 /**

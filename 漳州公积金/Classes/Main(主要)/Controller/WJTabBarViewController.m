@@ -24,7 +24,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    //self.tabBar.backgroundImage  = [UIImage resizedImage:@"tabbar_compose_button"];
+    //self.tabBar.backgroundColor = [UIColor blueColor];
     // 添加所有的子控制器
     [self addAllChildVcs];
     
@@ -92,6 +93,8 @@
     // 创建自定义tabbar
     WJTabBar *customTabBar = [[WJTabBar alloc] init];
     //customTabBar.tabBarDelegate = self;
+    //customTabBar.backgroundImage  = [UIImage resizedImage:@"tabbar_compose_button"];
+    //[customTabBar setBackgroundColor:[UIColor blueColor]];
     // 更换系统自带的tabbar
     [self setValue:customTabBar forKeyPath:@"tabBar"];
 }
@@ -102,20 +105,21 @@
 - (void)addAllChildVcs
 {
     WJHomeViewController *home = [[WJHomeViewController alloc] init];
-    [self addOneChlildVc:home title:@"首页" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
+    [self addOneChlildVc:home title:@"首页" imageName:@"ic_tab_home_normal" selectedImageName:@"ic_tab_home_press"];
     self.home = home;
     self.lastSelectedViewContoller = home;
     
     WJServicesViewController *services = [[WJServicesViewController alloc] init];
-    [self addOneChlildVc:services title:@"便民服务" imageName:@"tabbar_discover" selectedImageName:@"tabbar_discover_selected"];
+    [self addOneChlildVc:services title:@"便民服务" imageName:@"ic_tab_server_normal" selectedImageName:@"ic_tab_server_press"];
     self.services = services;
     
     WJMineViewController *mine = [[WJMineViewController alloc] init];
-    [self addOneChlildVc:mine title:@"个人中心" imageName:@"tabbar_message_center" selectedImageName:@"tabbar_message_center_selected"];
+    mine.strUrl = WJUrlGJJ;
+    [self addOneChlildVc:mine title:@"个人中心" imageName:@"ic_tab_account_normal" selectedImageName:@"ic_tab_account_press"];
     self.mine= mine;
     
     WJSettingsViewController *settings = [[WJSettingsViewController alloc] init];
-    [self addOneChlildVc:settings title:@"设置" imageName:@"tabbar_profile" selectedImageName:@"tabbar_profile_selected"];
+    [self addOneChlildVc:settings title:@"设置" imageName:@"ic_tab_setting_normal" selectedImageName:@"ic_tab_setting_press"];
     self.settings = settings;
 }
 
@@ -138,14 +142,14 @@
     // 设置tabBarItem的普通文字颜色
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
     //textAttrs[UITextAttributeTextColor] = [UIColor blackColor];
-    textAttrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+    textAttrs[NSForegroundColorAttributeName] =WJColor(108,196,244); // [UIColor blackColor];
     //textAttrs[UITextAttributeFont] = [UIFont systemFontOfSize:10];
     textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:15];
     [childVc.tabBarItem setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
     
     // 设置tabBarItem的选中文字颜色
     NSMutableDictionary *selectedTextAttrs = [NSMutableDictionary dictionary];
-    selectedTextAttrs[NSForegroundColorAttributeName] = [UIColor orangeColor];
+    selectedTextAttrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
     selectedTextAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:15];
     [childVc.tabBarItem setTitleTextAttributes:selectedTextAttrs forState:UIControlStateSelected];
     
