@@ -31,12 +31,14 @@
     [super viewDidLoad];
     self.view.backgroundColor = WJGlobalBg;
     UIButton *titleView = [[UIButton alloc] init];
+    titleView.width=400;
+    titleView.height=44;
     [titleView setTitle:@"漳州市住房公积金管理中心" forState:UIControlStateNormal];
-    [titleView setImage:[UIImage resizedImage:@"gjj_logo"] forState:UIControlStateNormal];
-    [titleView setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    [titleView setBackgroundImage: [UIImage imageNamed:@"gjj_logo"] forState:UIControlStateNormal];
+    [titleView.titleLabel setFont:[UIFont boldSystemFontOfSize:20]];
+    [titleView setImage:[UIImage imageNamed:@"gjj_logo32"] forState:UIControlStateNormal];
+    [titleView setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [titleView setTitleEdgeInsets:UIEdgeInsetsMake(0, 10, 0, 0)];
     self.navigationItem.titleView = titleView;
-    
     [self setup];
 }
 /**
@@ -47,7 +49,7 @@
     UIImageView* topView = [[UIImageView alloc] init];
     [self.view addSubview:topView];
     topView.x = 0;
-    topView.y = 64;
+    topView.y = 0;
     topView.width = self.view.width;
     topView.height = 50;
     topView.image = [UIImage imageNamed:@"image_bg"];
@@ -63,7 +65,7 @@
 //    topLable.height = 44;
     topLable.numberOfLines = 0;
     topLable.textColor = WJColor(122, 122, 122);
-    topLable.text =@"  尊敬的用户，下午好！\n  欢迎使用漳州市掌上住房公积金";
+    topLable.text =@"   尊敬的用户，下午好！\n   欢迎使用漳州市掌上住房公积金";
     
     // 2.创建一个大窗口GridView
     UIView *gridView = [[UIView alloc] init];
@@ -116,7 +118,7 @@
     bszn.x = margin;
     bszn.y = margin + CGRectGetMaxY(gjj.frame);
     bszn.width = gjj.width;
-    bszn.height = bszn.width * multiple;
+    bszn.height = bszn.width * 1.5;
     bszn.backgroundColor = WJColor(35, 183, 233);
     [bszn setImageName:@"ic_loan" text:@"办事指南"];
     // 添加手势监听器（一个手势监听器 只能 监听对应的一个view）

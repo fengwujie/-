@@ -25,6 +25,21 @@
     [self.window makeKeyAndVisible];
 
     self.window.rootViewController = [[WJTabBarViewController alloc] init];
+    
+//    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    
+//    UITabBar *tabBar = tabBarController.tabBar;
+//    UITabBarItem *tabBarItem1 = [tabBar.items objectAtIndex:0];
+//    UITabBarItem *tabBarItem2 = [tabBar.items objectAtIndex:1];
+//    UITabBarItem *tabBarItem3 = [tabBar.items objectAtIndex:2];
+//    UITabBarItem *tabBarItem4 = [tabBar.items objectAtIndex:3];
+//    
+//    //add image to tabbarItems
+//    tabBarItem1.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+//    tabBarItem2.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+//    tabBarItem3.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+//    tabBarItem4.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+    
     return YES;
 }
 

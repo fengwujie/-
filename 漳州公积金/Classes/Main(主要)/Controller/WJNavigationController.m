@@ -54,6 +54,9 @@
     if (!iOS7) {
         [appearance setBackgroundImage:[UIImage imageWithName:@"navigationbar_background"] forBarMetrics:UIBarMetricsDefault];
     }
+    [appearance setBackgroundImage:[UIImage imageNamed:@"home_top"]forBarMetrics:UIBarMetricsDefault];
+    //[appearance setBackgroundColor:[UIColor blueColor]];
+    //[appearance setBackgroundImage:[UIImage imageNamed:@"home_top"] forBarPosition:UIBarPositionTop barMetrics:UIBarMetricsDefault];
     
     // 设置文字属性
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
@@ -122,4 +125,5 @@
 {
     [self popToRootViewControllerAnimated:YES];
 }
+
 @end
