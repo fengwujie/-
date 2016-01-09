@@ -12,7 +12,7 @@
 
 - (NSNumber *)count
 {
-    return _count ? _count : @20;
+    return _size ? _size : @20;
 }
 
 - (id)init

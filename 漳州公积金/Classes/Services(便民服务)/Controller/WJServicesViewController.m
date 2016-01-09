@@ -164,11 +164,11 @@
             title = ((WJHomeButton *)view).text;
         }
         else if ([view isEqual:self.kfzn]) {   //开户指南
-            webVC.strUrl = @"https://www.baidu.com";
+            webVC.strUrl = WJUrlKFZN;
             title = ((WJHomeButton *)view).text;
         }
         else if ([view isEqual:self.gjjll]) {  //公积金利率
-            webVC.strUrl = @"http://www.jd.com";
+            webVC.strUrl = WJUrlGJJLL;
             title = ((WJHomeButtonSmall *)view).text;
         }
         webVC.title = title;

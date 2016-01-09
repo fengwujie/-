@@ -90,15 +90,16 @@
 {
     // 1.封装请求参数
     WJNewsParam *param = [WJNewsParam param];
-    WJNews *news = [self.arrayNews firstObject];
-    if (news) {
-        param.since_id = @([news.strID longLongValue]);
-    }
+    param.lmid = self.lmid;
+//    WJNews *news = [self.arrayNews firstObject];
+//    if (news) {
+//        param.since_id = @([news.strID longLongValue]);
+//    }
     
     // 2.加载微博数据
     [WJNewsTool newsWithParam:param success:^(WJNewsReturn *result) {
         // 获得最新的微博frame数组
-        NSArray *newss = result.arrayNews;
+        NSArray *newss = result.Details;
         
         // 将新数据插入到旧数据的最前面
         NSRange range = NSMakeRange(0, newss.count);
@@ -127,15 +128,16 @@
 {
     // 1.封装请求参数
     WJNewsParam *param = [WJNewsParam param];
-    WJNews *lastNews = [self.arrayNews lastObject];
-    if (lastNews) {
-        param.max_id = @([lastNews.strID longLongValue] - 1);
-    }
+    param.lmid = self.lmid;
+//    WJNews *lastNews = [self.arrayNews lastObject];
+//    if (lastNews) {
+//        param.max_id = @([lastNews.strID longLongValue] - 1);
+//    }
     
     // 2.加载微博数据
     [WJNewsTool newsWithParam:param success:^(WJNewsReturn *result) {
         // 获得最新的微博frame数组
-        NSArray *newss = result.arrayNews;
+        NSArray *newss = result.Details;
         
         // 将新数据插入到旧数据的最后面
         [self.arrayNews addObjectsFromArray:newss];
@@ -176,8 +178,8 @@
 {
     WJNews *news = self.arrayNews[indexPath.row];
     WJWebViewController *webVC = [[WJWebViewController alloc] init];
-    webVC.strUrl = news.destUrl;
-    webVC.title = news.title;
+    webVC.strUrl = news.RedirectUrl;
+    webVC.title = news.FTitle;
     [self.navigationController pushViewController:webVC animated:YES];
 }
 

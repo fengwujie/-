@@ -27,7 +27,7 @@
 //    } else { // 没有缓存数据
         NSDictionary *params = [param mj_keyValues];
         
-        [WJHttpTool get:@"https://api.weibo.com/2/statuses/home_timeline.json" params:params success:^(id responseObj) {
+        [WJHttpTool get:@"http://webservice.zzgjj.gov.cn/DataServiceWeb.asmx" params:params success:^(id responseObj) {
             // 新浪返回的字典数组
 //            NSArray *statusDictArray = responseObj[@"statuses"];
             

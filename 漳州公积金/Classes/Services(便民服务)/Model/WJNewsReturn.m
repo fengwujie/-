@@ -14,7 +14,7 @@
 
 + (NSDictionary *)mj_objectClassInArray
 {
-    return @{@"statuses" : [WJNews class]};
+    return @{@"Details" : [WJNews class]};
 }
 
 @end

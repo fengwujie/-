@@ -60,7 +60,7 @@
     
     // 设置文字属性
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
-    textAttrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+    textAttrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
     // UITextAttributeFont  --> NSFontAttributeName(iOS7)
 #warning 过期,并不代表不能用, 仅仅是有最新的方案可以取代它
     textAttrs[NSFontAttributeName] = WJNavigationTitleFont;

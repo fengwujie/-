@@ -38,16 +38,16 @@
 #define WJNavigationTitleFont [UIFont boldSystemFontOfSize:20]
 
 /** 公积金主页 */
-#define WJUrlGJJ @"http://www.baidu.com"
+#define WJUrlGJJ @"http://2015.zzgjj.gov.cn/wap/Personal/"
 /** 贷款指南 */
-#define WJUrlDKZN @"http://www.baidu.com"
+#define WJUrlDKZN @"http://2015.zzgjj.gov.cn/wap824.html"
 #define WJColorDKZN WJColor(253, 170, 74)
 /** 提取指南 */
-#define WJUrlTQZN @"http://www.baidu.com"
+#define WJUrlTQZN @"http://2015.zzgjj.gov.cn/wap866.html"
 #define WJColorTQZN WJColor(31, 193, 179);
 /** 开户指南 */
-#define WJUrlKFZN @"http://www.baidu.com"
+#define WJUrlKFZN @"http://2015.zzgjj.gov.cn/wap462.html"
 /** 公积金利率 */
-#define WJUrlGJJLL @"http://www.baidu.com"
+#define WJUrlGJJLL @"http://2015.zzgjj.gov.cn/wap/Report.aspx"
 
 #endif /* PrefixHeader_pch */

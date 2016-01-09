@@ -7,5 +7,14 @@
 //
 
 #import "WJNews.h"
+#import "MJExtension.h"
 @implementation WJNews
+
++ (NSDictionary *)mj_replacedKeyFromPropertyName
+{
+    return @{
+             @"ID" : @"id"
+             };
+}
+
 @end

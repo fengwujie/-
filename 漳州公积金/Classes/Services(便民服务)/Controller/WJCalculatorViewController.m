@@ -22,7 +22,7 @@
 -(NSMutableArray *)news
 {
     if (_news==nil) {
-        NSArray *array = @[@{@"title":@"可贷额度计算器" , @"destUrl": @"http://www.baidu.com",@"createDate" : @"2016-01-06"},@{@"title":@"等额本金月还款额计算器" , @"destUrl": @"http://www.baidu.com"},@{@"title":@"等额本息月还款额计算器" , @"destUrl": @"http://www.baidu.com"}];
+        NSArray *array = @[@{@"FTitle":@"可贷额度计算器" , @"RedirectUrl": @"http://2015.zzgjj.gov.cn/jsq/kdednew.htm"},@{@"FTitle":@"等额本金月还款额计算器" , @"RedirectUrl": @"http://2015.zzgjj.gov.cn/jsq/return.asp"},@{@"FTitle":@"等额本息月还款额计算器" , @"RedirectUrl": @"http://2015.zzgjj.gov.cn/jsq/return1.asp"}];
         _news = [WJNews mj_objectArrayWithKeyValuesArray:array];
         /*
         NSDictionary *dict1 = @{@"title":@"可贷额度计算器" , @"destUrl": @"http://www.baidu.com"};
@@ -81,10 +81,10 @@
 {
     // 1.取出这行对应的News模型
     WJNews *new = self.news[indexPath.row];
-    if (new.destUrl) {
+    if (new.RedirectUrl) {
         WJWebViewController *webVC = [[WJWebViewController alloc] init];
-        webVC.title = new.title;
-        webVC.strUrl = new.destUrl;
+        webVC.title = new.FTitle;
+        webVC.strUrl = new.RedirectUrl;
         [self.navigationController pushViewController:webVC animated:YES];
     }
 }

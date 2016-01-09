@@ -10,4 +10,9 @@
 
 @interface WJNewsCommonViewController : UITableViewController
 
+/**
+ *  (5为政策法规，7为办事指南)
+ */
+@property (nonatomic, strong) NSNumber *lmid;
+
 @end

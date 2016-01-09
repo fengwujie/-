@@ -11,6 +11,6 @@
 @interface WJNewsReturn : NSObject
 
 /** 新闻数组（装着WJNews模型） */
-@property (nonatomic, strong) NSArray *arrayNews;
+@property (nonatomic, strong) NSArray *Details;
 
 @end

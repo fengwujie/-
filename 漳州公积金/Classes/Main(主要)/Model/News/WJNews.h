@@ -12,18 +12,18 @@
 /**
  *  新闻ID
  */
-@property (nonatomic, copy) NSString *strID;
+@property (nonatomic, copy) NSString *ID;
 /**
  *  标题
  */
-@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *FTitle;
 /**
  *  发布日期
  */
-@property (nonatomic, copy) NSString *createDate;
+@property (nonatomic, copy) NSString *Indate;
 /**
  *  新闻跳转URL地址
  */
-@property (nonatomic, copy) NSString *destUrl;
+@property (nonatomic, copy) NSString *RedirectUrl;
 
 @end

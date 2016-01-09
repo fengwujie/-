@@ -34,7 +34,7 @@
     titleView.width=400;
     titleView.height=44;
     [titleView setTitle:@"漳州市住房公积金管理中心" forState:UIControlStateNormal];
-    [titleView.titleLabel setFont:[UIFont boldSystemFontOfSize:20]];
+    [titleView.titleLabel setFont:WJNavigationTitleFont];
     [titleView setImage:[UIImage imageNamed:@"gjj_logo32"] forState:UIControlStateNormal];
     [titleView setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [titleView setTitleEdgeInsets:UIEdgeInsetsMake(0, 10, 0, 0)];
