@@ -14,6 +14,8 @@
 #import "WJNewsParam.h"
 #import "WJNewsReturn.h"
 #import "WJNewsTool.h"
+#import "SCHttpClient.h"
+#import "MJExtension.h"
 
 @interface WJNewsCommonViewController ()
 /**
@@ -43,11 +45,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+//    // 监听SoapWebServices的通知(返回XML数据解析成功后，会发出通知)
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(soapXMLNotification:) name:WJSoapXMLNotification object:nil];
+    
     self.tableView.backgroundColor = WJGlobalBg;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     [self setupRefresh];
 }
+//
+//- (void)dealloc
+//{
+//    [[NSNotificationCenter defaultCenter] removeObserver:self];
+//}
+//
+///**
+// *  SoapWebServices的通知(返回XML数据解析成功后，会发出通知)
+// */
+//- (void)soapXMLNotification:(NSNotification *)note
+//{
+//    NSArray *array =note.userInfo[WJSoapXML];
+//    WJLog(@"soapXMLNotification---%@",array);
+//    
+//    //WJNewsReturn *result = [WJNewsReturn mj_objectWithKeyValues:array];
+//    
+//    NSArray *resultTemp = [WJNews mj_objectArrayWithKeyValuesArray:array];
+//    
+//}
+
 
 /**
  *  集成刷新控件
@@ -91,14 +116,15 @@
     // 1.封装请求参数
     WJNewsParam *param = [WJNewsParam param];
     param.lmid = self.lmid;
+    
 //    WJNews *news = [self.arrayNews firstObject];
 //    if (news) {
 //        param.since_id = @([news.strID longLongValue]);
 //    }
     
-    // 2.加载微博数据
+    // 2.加载新闻列表
     [WJNewsTool newsWithParam:param success:^(WJNewsReturn *result) {
-        // 获得最新的微博frame数组
+        // 获得最新的新闻News数组
         NSArray *newss = result.Details;
         
         // 将新数据插入到旧数据的最前面
@@ -121,6 +147,13 @@
     }];
 }
 
+//- (void)loadNewStatuses:(UIRefreshControl *)refreshControl
+//{
+//    SCHttpClient *client=[SCHttpClient new];
+//    [client postRequestWithPhoneNumber:@""];
+//}
+
+
 /**
  *  加载更多的微博数据
  */
@@ -134,9 +167,9 @@
 //        param.max_id = @([lastNews.strID longLongValue] - 1);
 //    }
     
-    // 2.加载微博数据
+    // 2.加载新闻数据
     [WJNewsTool newsWithParam:param success:^(WJNewsReturn *result) {
-        // 获得最新的微博frame数组
+        // 获得最新的新闻News数组
         NSArray *newss = result.Details;
         
         // 将新数据插入到旧数据的最后面
@@ -170,7 +203,7 @@
     WJNewsCommonCell *cell = [WJNewsCommonCell cellWithTableView:tableView];
     
     cell.news = self.arrayNews[indexPath.row];
-    
+    [cell setIndexPath:indexPath rowsInSection: self.arrayNews.count];
     return cell;
 }
 

@@ -10,15 +10,21 @@
 
 @implementation WJNewsParam
 
-- (NSNumber *)count
+- (NSNumber *)size
 {
     return _size ? _size : @20;
+}
+
+-(NSString *)str
+{
+    return _str ? _str : @"";
 }
 
 - (id)init
 {
     if (self = [super init]) {
-        
+//        _size = @20;
+//        _str = @"";
     }
     return self;
 }

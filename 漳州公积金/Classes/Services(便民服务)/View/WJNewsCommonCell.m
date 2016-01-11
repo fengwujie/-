@@ -41,8 +41,8 @@
 
 - (void)setNews:(WJNews *)news{
     _news = news;
-    self.textLabel.text = news.title;
-    self.detailTextLabel.text = news.createDate;
+    self.textLabel.text = news.FTitle;
+    self.detailTextLabel.text = news.Indate;
 }
 
 #pragma mark - 调整子控件的位置
@@ -57,8 +57,11 @@
     //        self.textLabel.x = 10;
     WJLog(@"layoutSubviews--%@",self.news);
     if (self.news) {
-        if (self.news.createDate) {
-            if (self.textLabel.width > (self.width - self.detailTextLabel.width - 10)) {
+        if (self.news.Indate) {
+//            self.detailTextLabel.width = 150;
+//            self.detailTextLabel.x = self.width - self.detailTextLabel.width - 10;
+            WJLog(@"textLabel.width--%f,self.width--%f,detailTextLabel.width---%f",self.textLabel.width,self.width,self.detailTextLabel.width);
+            if ((self.textLabel.width) > (self.width - self.detailTextLabel.width - 10)) {
                 self.textLabel.width = self.textLabel.width - self.detailTextLabel.width - 5;
                 return;
             }
@@ -70,7 +73,7 @@
 }
 
 #pragma mark - setter
-- (void)setIndexPath:(NSIndexPath *)indexPath rowsInSection:(int)rows
+- (void)setIndexPath:(NSIndexPath *)indexPath rowsInSection:(NSUInteger)rows
 {
     // 1.取出背景view
     UIImageView *bgView = (UIImageView *)self.backgroundView;

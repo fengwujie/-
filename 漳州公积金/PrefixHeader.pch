@@ -37,6 +37,7 @@
 // 导航栏标题的字体
 #define WJNavigationTitleFont [UIFont boldSystemFontOfSize:20]
 
+//各个主页面对应的链接网址
 /** 公积金主页 */
 #define WJUrlGJJ @"http://2015.zzgjj.gov.cn/wap/Personal/"
 /** 贷款指南 */
@@ -49,5 +50,12 @@
 #define WJUrlKFZN @"http://2015.zzgjj.gov.cn/wap462.html"
 /** 公积金利率 */
 #define WJUrlGJJLL @"http://2015.zzgjj.gov.cn/wap/Report.aspx"
+
+// 通知中心NSNotificationCenter------SoapWebServices返回数据后，解析XML取得数据时，进行通知处理
+// SoapWebServices返回数据后，解析XML取得数据时，进行通知处理
+/**  UserInfo的KEY*/
+#define WJSoapXML @"WJSoapXML"
+/**  发送通知的通知名称*/
+#define WJSoapXMLNotification @"WJSoapXMLNotification"
 
 #endif /* PrefixHeader_pch */

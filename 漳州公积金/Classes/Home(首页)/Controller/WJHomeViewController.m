@@ -10,6 +10,7 @@
 #import "WJWebViewController.h"
 #import "WJHomeButton.h"
 #import "WJHomeButtonSmall.h"
+#import "WJNewsCommonViewController.h"
 
 @interface WJHomeViewController ()
 /** 我的公积金 */
@@ -173,30 +174,36 @@
 -(void) buttonClick:(UITapGestureRecognizer *)recognizer
 {
     UIView *view = recognizer.view;
-    WJWebViewController *webVC = [[WJWebViewController alloc] init];
-    NSString *title;
     if ([view isEqual:self.gjj]) {   //我的公积金
+        WJWebViewController *webVC = [[WJWebViewController alloc] init];
         webVC.strUrl = WJUrlGJJ;
-        title = ((WJHomeButton *)view).text;
+        webVC.title = ((WJHomeButton *)view).text;
+        [self.navigationController pushViewController:webVC animated:YES];
     }
     else if ([view isEqual:self.dkzn]) {  //贷款指南
+        WJWebViewController *webVC = [[WJWebViewController alloc] init];
         webVC.strUrl = WJUrlDKZN;
-        title = ((WJHomeButtonSmall *)view).text;
+        webVC.title = ((WJHomeButtonSmall *)view).text;
+        [self.navigationController pushViewController:webVC animated:YES];
     }
     else if ([view isEqual:self.tqzn]) {   //提取指南
+        WJWebViewController *webVC = [[WJWebViewController alloc] init];
         webVC.strUrl = WJUrlTQZN;
-        title = ((WJHomeButtonSmall *)view).text;
+        webVC.title = ((WJHomeButtonSmall *)view).text;
+        [self.navigationController pushViewController:webVC animated:YES];
     }
     else if ([view isEqual:self.zcfg]) {   //政策法规
-        webVC.strUrl = @"https://www.baidu.com";
-        title = ((WJHomeButton *)view).text;
+        WJNewsCommonViewController *newsVC = [[WJNewsCommonViewController alloc] init];
+        newsVC.lmid = @5;
+        newsVC.title = ((WJHomeButton *)view).text;
+        [self.navigationController pushViewController:newsVC animated:YES];
     }
     else if ([view isEqual:self.bszn]) {  //办事指南
-        webVC.strUrl = @"http://www.jd.com";
-        title = ((WJHomeButton *)view).text;
+        WJNewsCommonViewController *newsVC = [[WJNewsCommonViewController alloc] init];
+        newsVC.lmid = @7;
+        newsVC.title = ((WJHomeButton *)view).text;
+        [self.navigationController pushViewController:newsVC animated:YES];
     }
-    webVC.title = title;
-    [self.navigationController pushViewController:webVC animated:YES];
 }
 
 /**
