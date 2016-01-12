@@ -42,7 +42,7 @@
 - (void)setNews:(WJNews *)news{
     _news = news;
     self.textLabel.text = news.FTitle;
-    self.detailTextLabel.text = news.Indate;
+    self.detailTextLabel.text = news.cIndate;
 }
 
 #pragma mark - 调整子控件的位置
@@ -55,16 +55,16 @@
     //        self.textLabel.centerY = self.height * 0.5;
     //    } else {
     //        self.textLabel.x = 10;
-    WJLog(@"layoutSubviews--%@",self.news);
     if (self.news) {
         if (self.news.Indate) {
-//            self.detailTextLabel.width = 150;
-//            self.detailTextLabel.x = self.width - self.detailTextLabel.width - 10;
-            WJLog(@"textLabel.width--%f,self.width--%f,detailTextLabel.width---%f",self.textLabel.width,self.width,self.detailTextLabel.width);
-            if ((self.textLabel.width) > (self.width - self.detailTextLabel.width - 10)) {
-                self.textLabel.width = self.textLabel.width - self.detailTextLabel.width - 5;
-                return;
-            }
+            self.detailTextLabel.width = 100;
+            self.detailTextLabel.x = self.width - self.detailTextLabel.width - 10;
+            self.textLabel.width = self.width - self.detailTextLabel.width - 25;
+//            WJLog(@"textLabel.width--%f,self.width--%f,detailTextLabel.width---%f",self.textLabel.width,self.width,self.detailTextLabel.width);
+//            if ((self.textLabel.width) > (self.width - self.detailTextLabel.width - 10)) {
+//                self.textLabel.width = self.textLabel.width - self.detailTextLabel.width - 5;
+//                return;
+//            }
         }
     }
 //    // 调整子标题的x

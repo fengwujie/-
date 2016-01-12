@@ -22,8 +22,17 @@
  */
 @property (nonatomic, copy) NSString *Indate;
 /**
- *  新闻跳转URL地址
+ *  新闻跳转URL地址，目前没有，服务器返回的是空值，
  */
 @property (nonatomic, copy) NSString *RedirectUrl;
+/**
+ *  日期，年月日
+ */
+@property (nonatomic, copy) NSString *cIndate;
+
+/**
+ *  新闻真实的跳转链接
+ */
+@property (nonatomic, copy) NSString *realRedirectUrl;
 
 @end

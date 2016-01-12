@@ -116,7 +116,7 @@
     // 1.封装请求参数
     WJNewsParam *param = [WJNewsParam param];
     param.lmid = self.lmid;
-    
+    param.str =@"";  // @" and datediff(day,indate,'2015-5-23 15:55:00')>0";
 //    WJNews *news = [self.arrayNews firstObject];
 //    if (news) {
 //        param.since_id = @([news.strID longLongValue]);
@@ -211,7 +211,7 @@
 {
     WJNews *news = self.arrayNews[indexPath.row];
     WJWebViewController *webVC = [[WJWebViewController alloc] init];
-    webVC.strUrl = news.RedirectUrl;
+    webVC.strUrl = news.realRedirectUrl;
     webVC.title = news.FTitle;
     [self.navigationController pushViewController:webVC animated:YES];
 }
