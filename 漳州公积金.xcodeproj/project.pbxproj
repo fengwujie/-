@@ -15,6 +15,7 @@
 		FD0C086C1C3A9BE700F6E64A /* WJCommonSwitchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0C08661C3A9BE700F6E64A /* WJCommonSwitchItem.m */; };
 		FD1ED28C1C3AD2F3006FD923 /* WJBaseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1ED28B1C3AD2F3006FD923 /* WJBaseTool.m */; };
 		FD1ED28F1C3AD36A006FD923 /* WJHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1ED28E1C3AD36A006FD923 /* WJHttpTool.m */; };
+		FD345E3B1C46429D00B47B52 /* NSString+Xml.m in Sources */ = {isa = PBXBuildFile; fileRef = FD345E3A1C46429C00B47B52 /* NSString+Xml.m */; };
 		FD7533911C3A9DD400660F3B /* WJCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7533901C3A9DD400660F3B /* WJCommonViewController.m */; };
 		FD8D865C1C3B6DC50005C75F /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8D862C1C3B6DC50005C75F /* MJRefreshAutoFooter.m */; };
 		FD8D865D1C3B6DC50005C75F /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8D862E1C3B6DC50005C75F /* MJRefreshBackFooter.m */; };
@@ -136,6 +137,8 @@
 		FD1ED28B1C3AD2F3006FD923 /* WJBaseTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJBaseTool.m; sourceTree = "<group>"; };
 		FD1ED28D1C3AD36A006FD923 /* WJHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJHttpTool.h; sourceTree = "<group>"; };
 		FD1ED28E1C3AD36A006FD923 /* WJHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJHttpTool.m; sourceTree = "<group>"; };
+		FD345E391C46429C00B47B52 /* NSString+Xml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Xml.h"; sourceTree = "<group>"; };
+		FD345E3A1C46429C00B47B52 /* NSString+Xml.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Xml.m"; sourceTree = "<group>"; };
 		FD75338F1C3A9DD400660F3B /* WJCommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJCommonViewController.h; sourceTree = "<group>"; };
 		FD7533901C3A9DD400660F3B /* WJCommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJCommonViewController.m; sourceTree = "<group>"; };
 		FD8D862B1C3B6DC50005C75F /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
@@ -715,6 +718,8 @@
 				FDDE456C1C3A4E5A00C39457 /* UIImage+Extension.m */,
 				FDDE456D1C3A4E5A00C39457 /* UIView+Extension.h */,
 				FDDE456E1C3A4E5A00C39457 /* UIView+Extension.m */,
+				FD345E391C46429C00B47B52 /* NSString+Xml.h */,
+				FD345E3A1C46429C00B47B52 /* NSString+Xml.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1060,6 +1065,7 @@
 				FDA808351C41760F006F82C9 /* AFURLResponseSerialization.m in Sources */,
 				FDA8082E1C41760F006F82C9 /* AFHTTPRequestOperation.m in Sources */,
 				FD8D86971C3B90960005C75F /* WJUpdateTool.m in Sources */,
+				FD345E3B1C46429D00B47B52 /* NSString+Xml.m in Sources */,
 				FDCF78A11C3CE1FE00B98AD0 /* WJNewsCommonCell.m in Sources */,
 				FDDE45951C3A539A00C39457 /* WJTabBarViewController.m in Sources */,
 				FD0C08671C3A9BE700F6E64A /* WJCommonArrowItem.m in Sources */,

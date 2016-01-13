@@ -4,6 +4,7 @@
 
 #import "WJHttpTool.h"
 #import "AFNetworking.h"
+#import "NSString+Xml.h"
 
 @implementation WJHttpTool
 
@@ -132,6 +133,7 @@
 + (void)post:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(NSError *))failure
 {
     NSString *soapMessage = params[@"soapMessage"];
+    WJLog(@"soapMessage:%@" , soapMessage);
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer = [[AFHTTPResponseSerializer alloc] init];
     [manager.requestSerializer setValue:@"application/soap+xml; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
@@ -140,14 +142,21 @@
     }];
     [manager POST:url parameters:soapMessage success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSString *response = [[NSString alloc] initWithData:(NSData *)responseObject encoding:NSUTF8StringEncoding];
-        //WJLog(@"success:operation:%@, response:%@", operation, response);
-        //返回XML串中的数据体开头<方法名Result>
+        
+        /*
+        // WJLog(@"success:operation:%@, response:%@", operation, response);
+        // 返回XML串中的数据体开头<方法名Result>的位置
         NSRange rangeBegin = [response rangeOfString:[NSString stringWithFormat:@"<%@Result>",params[@"methodName"]]];
-        //返回XML串中的数据体结尾</方法名Result>
+        // 返回XML串中的数据体结尾</方法名Result>的位置
         NSRange rangeEnd = [response rangeOfString:[NSString stringWithFormat:@"</%@Result>",params[@"methodName"]]];
+        // 截取字符串的开始位置
         long beginIndex = rangeBegin.location + rangeBegin.length;
+        // 截取字符串的结束位置
         long endIndex = rangeEnd.location - beginIndex;
         NSString *text = [response substringWithRange:NSMakeRange(beginIndex,endIndex)];
+         */
+        NSString *elementName = [NSString stringWithFormat:@"%@Result",params[@"methodName"]];
+        NSString *text = [response stringByXmlNoteContentWithElementName:elementName];
         WJLog(@"success:text:%@", text);
         if (success) {
             success(text);

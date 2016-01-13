@@ -92,7 +92,7 @@
     kfzn.y = margin + CGRectGetMaxY(dkzn.frame);
     kfzn.width = dkzn.width;
     kfzn.height = kfzn.width * 1.5;//multiple;
-    kfzn.backgroundColor = WJColor(0, 0, 200);
+    kfzn.backgroundColor = WJColorKFZN;
     [kfzn setImageName:@"ic_material" text:@"开户指南"];
     // 添加手势监听器（一个手势监听器 只能 监听对应的一个view）
     [self addTapGestureRecognizer:kfzn];
@@ -108,7 +108,7 @@
     gjjll.y = kfzn.y;
     gjjll.width = kfzn.width;
     gjjll.height = (kfzn.height - margin) * 0.5;
-    gjjll.backgroundColor = WJColor(80, 80, 150);
+    gjjll.backgroundColor = WJColorGJJLL;
     [gjjll setImageName:@"ic_material" text:@"公积金利率"];
     // 添加手势监听器（一个手势监听器 只能 监听对应的一个view）
     [self addTapGestureRecognizer:gjjll];
@@ -124,7 +124,7 @@
     dkjsq.y = margin + CGRectGetMaxY(gjjll.frame);
     dkjsq.width = gjjll.width;
     dkjsq.height = gjjll.height;
-    dkjsq.backgroundColor = WJColor(80, 180, 80);
+    dkjsq.backgroundColor = WJColorDKJSQ;
     [dkjsq setImageName:@"ic_material" text:@"贷款计算器"];
     // 添加手势监听器（一个手势监听器 只能 监听对应的一个view）
     [self addTapGestureRecognizer:dkjsq];

@@ -116,11 +116,10 @@
     // 1.封装请求参数
     WJNewsParam *param = [WJNewsParam param];
     param.lmid = self.lmid;
-    param.str =@"";  // @" and datediff(day,indate,'2015-5-23 15:55:00')>0";
-//    WJNews *news = [self.arrayNews firstObject];
-//    if (news) {
-//        param.since_id = @([news.strID longLongValue]);
-//    }
+    WJNews *news = [self.arrayNews firstObject];
+    if (news) {
+        param.str =[NSString stringWithFormat: @" and datediff(day,indate,'%@')>0",news.Indate];
+    }
     
     // 2.加载新闻列表
     [WJNewsTool newsWithParam:param success:^(WJNewsReturn *result) {
@@ -138,14 +137,71 @@
         // 让刷新控件停止刷新（恢复默认的状态）
         [refreshControl endRefreshing];
         
-        // 提示用户最新的微博数量
-//        [self showNewStatusesCount:newFrames.count];
+        // 提示用户最新的新闻数量
+        [self showNewStatusesCount:newss.count];
     } failure:^(NSError *error) {
         WJLog(@"请求失败--%@", error);
         // 让刷新控件停止刷新（恢复默认的状态）
         [refreshControl endRefreshing];
     }];
 }
+
+/**
+ *  提示用户最新的微博数量
+ *
+ *  @param count 最新的微博数量
+ */
+- (void)showNewStatusesCount:(int)count
+{
+//    // 0.清零提醒数字
+//    [UIApplication sharedApplication].applicationIconBadgeNumber -= self.tabBarItem.badgeValue.intValue;
+//    self.tabBarItem.badgeValue = nil;
+    
+    // 1.创建一个UILabel
+    UILabel *label = [[UILabel alloc] init];
+    
+    // 2.显示文字
+    if (count) {
+        label.text = [NSString stringWithFormat:@"共有%d条新的数据", count];
+    } else {
+        label.text = @"没有最新的数据";
+    }
+    
+    // 3.设置背景
+    label.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageWithName:@"timeline_new_status_background"]];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.textColor = [UIColor whiteColor];
+    
+    // 4.设置frame
+    label.width = self.view.width;
+    label.height = 35;
+    label.x = 0;
+    label.y = 64 - label.height;
+    
+    // 5.添加到导航控制器的view
+    [self.navigationController.view insertSubview:label belowSubview:self.navigationController.navigationBar];
+    
+    // 6.动画
+    CGFloat duration = 0.75;
+    [UIView animateWithDuration:duration animations:^{
+        // 往下移动一个label的高度
+        label.transform = CGAffineTransformMakeTranslation(0, label.height);
+    } completion:^(BOOL finished) { // 向下移动完毕
+        
+        // 延迟delay秒后，再执行动画
+        CGFloat delay = 1.0;
+        
+        [UIView animateWithDuration:duration delay:delay options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            // 恢复到原来的位置
+            label.transform = CGAffineTransformIdentity;
+        } completion:^(BOOL finished) {
+            
+            // 删除控件
+            [label removeFromSuperview];
+        }];
+    }];
+}
+
 
 //- (void)loadNewStatuses:(UIRefreshControl *)refreshControl
 //{
@@ -162,11 +218,10 @@
     // 1.封装请求参数
     WJNewsParam *param = [WJNewsParam param];
     param.lmid = self.lmid;
-//    WJNews *lastNews = [self.arrayNews lastObject];
-//    if (lastNews) {
-//        param.max_id = @([lastNews.strID longLongValue] - 1);
-//    }
-    
+    WJNews *lastNews = [self.arrayNews lastObject];
+    if (lastNews) {
+        param.str =[NSString stringWithFormat: @" and datediff(day,indate,'%@')>0",lastNews.Indate];
+    }
     // 2.加载新闻数据
     [WJNewsTool newsWithParam:param success:^(WJNewsReturn *result) {
         // 获得最新的新闻News数组

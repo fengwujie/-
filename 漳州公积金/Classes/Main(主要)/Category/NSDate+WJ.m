@@ -76,4 +76,14 @@
     int unit = NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
     return [calendar components:unit fromDate:self toDate:[NSDate date] options:0];
 }
+
+- (int)dateWithHour
+{
+//    NSDate *date = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"HH"];
+    NSString *strHour = [dateFormatter stringFromDate:self];
+    return [strHour intValue];
+}
+
 @end

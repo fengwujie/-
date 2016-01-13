@@ -12,6 +12,8 @@
 #import "WJHttpTool.h"
 #import "MBProgressHUD+MJ.h"
 #import "WJSysTool.h"
+#import "AFNetworking.h"
+#import "NSString+Xml.h"
 
 typedef enum {
     WJUpdateToolAlertViewTypeUpdateMust, // 必须升级才能继续使用系统
@@ -37,8 +39,51 @@ typedef enum {
  */
 +(void)CheckUpdate:(BOOL) prompt
 {
+    // 1.获得请求管理者
+    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
+    mgr.responseSerializer = [AFHTTPResponseSerializer serializer];
+    mgr.requestSerializer = [AFHTTPRequestSerializer serializer];
+    // 2.发送GET请求
+    [mgr GET:@"http://2015.zzgjj.gov.cn/download/update.xml" parameters:nil
+     success:^(AFHTTPRequestOperation *operation, id responseObj) {
+         WJLog(@"success:转换前：%@",responseObj);
+         NSData *resultData = responseObj;
+         NSString *result =  [[NSString alloc]initWithData:resultData encoding:NSUTF8StringEncoding];
+         WJLog(@"success:转换后：%@",result);
+         // 返回的字典
+         NSString *maxVersion = [result stringByXmlNoteContentWithElementName:@"iosMaxVersion"];  //最新版本号
+         NSString *minVersion = [result stringByXmlNoteContentWithElementName:@"iosMinVersion"];  //强制升级的版本号
+         NSString *updateUrl = [result stringByXmlNoteContentWithElementName:@"iosUpdateUrl"];  //升级路径
+         // 获得当前打开软件的版本号
+         NSString *versionKey = (__bridge NSString *)kCFBundleVersionKey;
+         NSString *currentVersion = [NSBundle mainBundle].infoDictionary[versionKey];
+         WJLog(@"%@",currentVersion);
+         if ([currentVersion intValue] < [minVersion intValue]) {
+             //提示升级，如果不升级的话，则退出系统
+             [self showUpdatealert:updateUrl alertViewType:WJUpdateToolAlertViewTypeUpdateMust message:@"当前版本过低，必须更新才能使用，是否更新？"];
+         }
+         else if([maxVersion intValue] > [currentVersion intValue])
+         {
+             //提示是否升级，不升级的话仍然可以使用
+             [self showUpdatealert:updateUrl alertViewType:WJUpdateToolAlertViewTypeUpdateNormal message:@"检测到新版本，是否更新？"];
+         }
+         else
+         {
+             //不需要升级
+             if (prompt) {
+                 // 提示已经是最新版本
+                 [MBProgressHUD showSuccess:@"当前版本已经是最新版本！"];
+             }
+         }
+     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+         WJLog(@"检查升级：访问网络出错：%@", error);
+     }];
+
+    
+    /*
     // 获取数据库里面存储的版本号
-    NSString *strURL = @"";
+    NSString *strURL = @"http://2015.zzgjj.gov.cn/download/update.xml";
+    
     [WJHttpTool get:strURL params:nil success:^(id responseObj) {
         // 返回的字典
         NSString *maxVersion = responseObj[@"maxVersion"];  //最新版本号
@@ -68,6 +113,7 @@ typedef enum {
     } failure:^(NSError *error) {
         WJLog(@"检查升级：访问网络出错：%@", error);
     }];
+     */
 }
 /**
  *  提示升级

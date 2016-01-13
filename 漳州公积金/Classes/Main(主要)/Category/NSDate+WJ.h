@@ -31,4 +31,10 @@
  *  获得与当前时间的差距
  */
 - (NSDateComponents *)deltaWithNow;
+/**
+ *  获取时间的小时值
+ *
+ *  @return <#return value description#>
+ */
+- (int)dateWithHour;
 @end

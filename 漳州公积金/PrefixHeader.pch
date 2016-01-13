@@ -40,16 +40,25 @@
 //各个主页面对应的链接网址
 /** 公积金主页 */
 #define WJUrlGJJ @"http://2015.zzgjj.gov.cn/wap/Personal/"
+#define WJColorGJJ WJColor(253, 98, 124)
 /** 贷款指南 */
 #define WJUrlDKZN @"http://2015.zzgjj.gov.cn/wap824.html"
 #define WJColorDKZN WJColor(253, 170, 74)
 /** 提取指南 */
 #define WJUrlTQZN @"http://2015.zzgjj.gov.cn/wap866.html"
 #define WJColorTQZN WJColor(31, 193, 179);
+/** 政策法规 */
+#define WJColorZCFG WJColor(98, 194, 3)
+/** 办事指南 */
+#define WJColorBSZN WJColor(35, 183, 233)
 /** 开户指南 */
 #define WJUrlKFZN @"http://2015.zzgjj.gov.cn/wap462.html"
+#define WJColorKFZN WJColorBSZN
 /** 公积金利率 */
 #define WJUrlGJJLL @"http://2015.zzgjj.gov.cn/wap/Report.aspx"
+#define WJColorGJJLL WJColorGJJ
+/** 贷款计算器 */
+#define WJColorDKJSQ WJColorZCFG
 
 // 通知中心NSNotificationCenter------SoapWebServices返回数据后，解析XML取得数据时，进行通知处理
 // SoapWebServices返回数据后，解析XML取得数据时，进行通知处理

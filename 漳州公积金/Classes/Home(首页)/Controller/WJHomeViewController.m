@@ -11,6 +11,7 @@
 #import "WJHomeButton.h"
 #import "WJHomeButtonSmall.h"
 #import "WJNewsCommonViewController.h"
+#import "NSDate+WJ.h"
 
 @interface WJHomeViewController ()
 /** 我的公积金 */
@@ -39,6 +40,7 @@
     [titleView setImage:[UIImage imageNamed:@"gjj_logo32"] forState:UIControlStateNormal];
     [titleView setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [titleView setTitleEdgeInsets:UIEdgeInsetsMake(0, 10, 0, 0)];
+    [titleView setUserInteractionEnabled:NO];
     self.navigationItem.titleView = titleView;
     [self setup];
 }
@@ -66,7 +68,7 @@
 //    topLable.height = 44;
     topLable.numberOfLines = 0;
     topLable.textColor = WJColor(122, 122, 122);
-    topLable.text =@"   尊敬的用户，下午好！\n   欢迎使用漳州市掌上住房公积金";
+    topLable.text =[self welcomeText];
     
     // 2.创建一个大窗口GridView
     UIView *gridView = [[UIView alloc] init];
@@ -88,7 +90,7 @@
     gjj.y = margin;
     gjj.width = (gridView.width - margin * 3) * 0.5;
     gjj.height = gjj.width * multiple;
-    gjj.backgroundColor = WJColor(253, 98, 124);
+    gjj.backgroundColor = WJColorGJJ;
     [gjj setImageName:@"ic_my_gjj" text:@"我的公积金"];
     // 添加手势监听器（一个手势监听器 只能 监听对应的一个view）
 //    UITapGestureRecognizer *recognizerGJJ = [[UITapGestureRecognizer alloc] init];
@@ -104,7 +106,7 @@
     zcfg.y = gjj.y;
     zcfg.width = gjj.width;
     zcfg.height = zcfg.width * multiple;
-    zcfg.backgroundColor = WJColor(98, 194, 3);
+    zcfg.backgroundColor = WJColorZCFG;
     [zcfg setImageName:@"ic_policy" text:@"政策法规"];
     // 添加手势监听器（一个手势监听器 只能 监听对应的一个view）
     [self addTapGestureRecognizer:zcfg];
@@ -120,7 +122,7 @@
     bszn.y = margin + CGRectGetMaxY(gjj.frame);
     bszn.width = gjj.width;
     bszn.height = bszn.width * 1.5;
-    bszn.backgroundColor = WJColor(35, 183, 233);
+    bszn.backgroundColor = WJColorBSZN;
     [bszn setImageName:@"ic_loan" text:@"办事指南"];
     // 添加手势监听器（一个手势监听器 只能 监听对应的一个view）
     [self addTapGestureRecognizer:bszn];
@@ -203,6 +205,33 @@
         newsVC.lmid = @7;
         newsVC.title = ((WJHomeButton *)view).text;
         [self.navigationController pushViewController:newsVC animated:YES];
+    }
+}
+/**
+ *  获得问候语
+ */
+- (NSString *)welcomeText
+{
+    NSDate *date = [NSDate date];
+    int hour  = [date dateWithHour];
+    if (hour >=6 && hour < 8) {
+        return @"   尊敬的用户，早上好！\n   欢迎使用漳州市掌上住房公积金";
+    }
+    else if (hour >=8 && hour < 11)
+    {
+        return @"   尊敬的用户，上午好！\n   欢迎使用漳州市掌上住房公积金";
+    }
+    else if (hour >=11 && hour < 13)
+    {
+        return @"   尊敬的用户，中午好！\n   欢迎使用漳州市掌上住房公积金";
+    }
+    else if (hour >=13 && hour < 18)
+    {
+        return @"   尊敬的用户，下午好！\n   欢迎使用漳州市掌上住房公积金";
+    }
+    else
+    {
+        return @"   尊敬的用户，晚上好！\n   欢迎使用漳州市掌上住房公积金";
     }
 }
 
