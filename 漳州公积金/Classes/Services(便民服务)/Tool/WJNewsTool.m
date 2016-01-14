@@ -27,19 +27,20 @@
 //        }
 //    } else { // 没有缓存数据
     
-    param.methodName = @"TableToJson";
+    param.methodName = @"TableToJsonPageDate";
     NSString *soapMessage = [NSString stringWithFormat:
                              @"<?xml version=\"1.0\" encoding=\"utf-8\"?>\
                              <soap12:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\">\
                              <soap12:Body>\
                              <%@ xmlns=\"http://tempuri.org/\">\
                              <lmid>%@</lmid>\
-                             <str>%@</str>\
+                             <mindate>%@</mindate>\
+                             <maxdate>%@</maxdate>\
                              <size>%@</size>\
                              </%@>\
                              </soap12:Body>\
                              </soap12:Envelope>",
-                             param.methodName, param.lmid, param.str, param.size,param.methodName];
+                             param.methodName, param.lmid, param.mindate, param.maxdate, param.size,param.methodName];
     param.soapMessage = soapMessage;
         NSDictionary *params = [param mj_keyValues];
     

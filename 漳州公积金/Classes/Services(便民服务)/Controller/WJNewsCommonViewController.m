@@ -118,7 +118,8 @@
     param.lmid = self.lmid;
     WJNews *news = [self.arrayNews firstObject];
     if (news) {
-        param.str =[NSString stringWithFormat: @" and datediff(day,indate,'%@')>0",news.Indate];
+//        param.str =[NSString stringWithFormat: @" and datediff(day,indate,'%@')<0",news.Indate];
+        param.mindate = news.Indate;
     }
     
     // 2.加载新闻列表
@@ -220,7 +221,8 @@
     param.lmid = self.lmid;
     WJNews *lastNews = [self.arrayNews lastObject];
     if (lastNews) {
-        param.str =[NSString stringWithFormat: @" and datediff(day,indate,'%@')>0",lastNews.Indate];
+//        param.str =[NSString stringWithFormat: @" and datediff(day,indate,'%@')>0",lastNews.Indate];
+        param.maxdate = lastNews.Indate;
     }
     // 2.加载新闻数据
     [WJNewsTool newsWithParam:param success:^(WJNewsReturn *result) {

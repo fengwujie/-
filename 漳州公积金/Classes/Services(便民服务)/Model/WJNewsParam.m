@@ -15,9 +15,14 @@
     return _size ? _size : @20;
 }
 
--(NSString *)str
+- (NSString *)mindate
 {
-    return _str ? _str : @"";
+    return _mindate ? _mindate : @"";
+}
+
+- (NSString *)maxdate
+{
+    return _maxdate ? _maxdate : @"";
 }
 
 - (id)init

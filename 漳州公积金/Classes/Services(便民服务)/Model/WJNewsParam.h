@@ -23,11 +23,14 @@
 
 /** false	int	单页返回的记录条数，最大不超过100，默认为20。*/
 @property (nonatomic, strong) NSNumber *size;
-
 /**
- *  查询的语句（第一次加载为空，每次刷新查询条件为"and datediff(day,indate,'" +最后一条的时间) + "')>0"，即列表小于最后一条记录的indate的记录）
+ *  表示获取时间大于mindate的数据
  */
-@property (nonatomic, copy) NSString *str;
+@property (nonatomic, copy) NSString *mindate;
+/**
+ *  表示获取时间小于maxdate的数据
+ */
+@property (nonatomic, copy) NSString *maxdate;
 
 /**
  *  请求方法名，必填，各自调用类的时候赋值，如新闻列表自己的WJNewsTool类中

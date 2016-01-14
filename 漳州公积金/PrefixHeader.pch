@@ -53,12 +53,12 @@
 #define WJColorBSZN WJColor(35, 183, 233)
 /** 开户指南 */
 #define WJUrlKFZN @"http://2015.zzgjj.gov.cn/wap462.html"
-#define WJColorKFZN WJColorBSZN
+#define WJColorKFZN WJColor(35, 183, 233)
 /** 公积金利率 */
 #define WJUrlGJJLL @"http://2015.zzgjj.gov.cn/wap/Report.aspx"
-#define WJColorGJJLL WJColorGJJ
+#define WJColorGJJLL WJColor(46, 223, 70)
 /** 贷款计算器 */
-#define WJColorDKJSQ WJColorZCFG
+#define WJColorDKJSQ WJColor(89, 33, 125)
 
 // 通知中心NSNotificationCenter------SoapWebServices返回数据后，解析XML取得数据时，进行通知处理
 // SoapWebServices返回数据后，解析XML取得数据时，进行通知处理
