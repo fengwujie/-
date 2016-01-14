@@ -64,7 +64,9 @@ typedef enum {
     
     // 2.设置组的所有行数据
     WJCommonLabelItem *version = [WJCommonLabelItem itemWithTitle:@"软件说明"];
-    version.text = @"版本号：1.0.0";
+    
+    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"];
+    version.text =[NSString stringWithFormat:@"版本号：%@", currentVersion] ;
     
     WJCommonArrowItem *update = [WJCommonArrowItem itemWithTitle:@"软件升级"];
     update.operation = ^{
