@@ -8,6 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ *  设备型号
+ */
+typedef enum{
+    /** 320*480  3.5寸*/
+    DeviceModeliPhone4,
+    /** 320*568  4寸*/
+    DeviceModeliPhone5,
+    /** 375*667 6和6S屏幕大小一样都是4.7寸*/
+    DeviceModeliPhone6,
+    /** 414*736 6Plus和6S Plus屏幕大小一样都是5.5寸*/
+    DeviceModeliPhone6Plus,
+    /** 未知设备型号，按iPhone5处理 */
+    DeviceModelUnKnown
+} DeviceModel;
+
 @interface WJSysTool : NSObject
 
 /**
@@ -16,5 +32,13 @@
 + (void)exitApplication;
 
 //+ (void)animationFinished:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context ;
+/**
+ *  获取设备型号
+ */
++ (DeviceModel)deviceModel;
 
+/**
+ *  获取导航栏字体大小
+ */
++ (UIFont *) navigationTitleFont;
 @end

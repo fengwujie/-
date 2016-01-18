@@ -5,6 +5,7 @@
 //
 
 #import "WJNavigationController.h"
+#import "WJSysTool.h"
 
 @interface WJNavigationController ()
 
@@ -63,7 +64,7 @@
     textAttrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
     // UITextAttributeFont  --> NSFontAttributeName(iOS7)
 #warning 过期,并不代表不能用, 仅仅是有最新的方案可以取代它
-    textAttrs[NSFontAttributeName] = WJNavigationTitleFont;
+    textAttrs[NSFontAttributeName] = [WJSysTool navigationTitleFont];
     // UIOffsetZero是结构体, 只要包装成NSValue对象, 才能放进字典\数组中
     //textAttrs[NSShadowAttributeName] = [NSValue valueWithUIOffset:UIOffsetZero];
     [appearance setTitleTextAttributes:textAttrs];

@@ -11,6 +11,7 @@
 #import "WJSettingsViewController.h"
 #import "WJNavigationController.h"
 #import "WJTabBar.h"
+#import "WJSysTool.h"
 
 @interface WJTabBarViewController () //<WJTabBarDelegate, UITabBarControllerDelegate>
 @property (nonatomic, weak) WJHomeViewController *home;
@@ -47,44 +48,6 @@
 //    
 //    self.lastSelectedViewContoller = vc;
 //}
-
-//- (void)getUnreadCount
-//{
-//    // 1.请求参数
-//    WJUnreadCountParam *param = [WJUnreadCountParam param];
-//    param.uid = [WJAccountTool account].uid;
-//    
-//    // 2.获得未读数
-//    [WJUserTool unreadCountWithParam:param success:^(WJUnreadCountResult *result) {
-//        // 显示微博未读数
-//        if (result.status == 0) {
-//            self.home.tabBarItem.badgeValue = nil;
-//        } else {
-//            self.home.tabBarItem.badgeValue = [NSString stringWithFormat:@"%d", result.status];
-//        }
-//        
-//        // 显示消息未读数
-//        if (result.messageCount == 0) {
-//            self.message.tabBarItem.badgeValue = nil;
-//        } else {
-//            self.message.tabBarItem.badgeValue = [NSString stringWithFormat:@"%d", result.messageCount];
-//        }
-//        
-//        // 显示新粉丝数
-//        if (result.follower == 0) {
-//            self.profile.tabBarItem.badgeValue = nil;
-//        } else {
-//            self.profile.tabBarItem.badgeValue = [NSString stringWithFormat:@"%d", result.follower];
-//        }
-//        
-//        // 在图标上显示所有的未读数
-//        [UIApplication sharedApplication].applicationIconBadgeNumber = result.totalCount;
-//        WJLog(@"总未读数--%d", result.totalCount);
-//    } failure:^(NSError *error) {
-//        WJLog(@"获得未读数失败---%@", error);
-//    }];
-//}
-
 /**
  *  创建自定义tabbar
  */
@@ -138,19 +101,22 @@
     
     // 设置图标
     childVc.tabBarItem.image = [UIImage imageWithName:imageName];
-    
+    float fontSize = 12;
+    if ([WJSysTool deviceModel] == DeviceModeliPhone6Plus) {
+        fontSize = 14;
+    }
     // 设置tabBarItem的普通文字颜色
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
     //textAttrs[UITextAttributeTextColor] = [UIColor blackColor];
     textAttrs[NSForegroundColorAttributeName] =WJColor(108,196,244); // [UIColor blackColor];
     //textAttrs[UITextAttributeFont] = [UIFont systemFontOfSize:10];
-    textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:15];
+    textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:fontSize];
     [childVc.tabBarItem setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
     
     // 设置tabBarItem的选中文字颜色
     NSMutableDictionary *selectedTextAttrs = [NSMutableDictionary dictionary];
     selectedTextAttrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
-    selectedTextAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:15];
+    selectedTextAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:fontSize];
     [childVc.tabBarItem setTitleTextAttributes:selectedTextAttrs forState:UIControlStateSelected];
     
     // 设置选中的图标
@@ -172,8 +138,15 @@
 //    tabFrame.origin.y = self.view.frame.size.height - 80;
     
 //    self.tabBar.frame = tabFrame;
-    
-    self.tabBar.height = 60;
+    float toolBarH = self.tabBar.height;
+    if ([WJSysTool deviceModel] == DeviceModeliPhone6Plus) {
+        toolBarH = 60;
+    }
+//    else if([WJSysTool getDeviceModel] == DeviceModeliPhone6Plus )
+//    {
+//        toolBarH = 50;
+//    }
+    self.tabBar.height = toolBarH;
     self.tabBar.y = self.view.height - self.tabBar.height;
 }
 @end

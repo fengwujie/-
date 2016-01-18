@@ -41,4 +41,49 @@
     
 }
 
++ (DeviceModel)deviceModel
+{
+    float screenHeight = Screen_height;
+    if(screenHeight == 480)
+    {
+        return DeviceModeliPhone4;
+    }
+    else if(screenHeight == 568)
+    {
+        return DeviceModeliPhone5;
+    }
+    else if(screenHeight == 667)
+    {
+        return DeviceModeliPhone6;
+    }
+    else if(screenHeight == 736)
+    {
+        return DeviceModeliPhone6Plus;
+    }
+    else
+    {
+        return DeviceModelUnKnown;
+    }
+}
+
++ (UIFont *)navigationTitleFont
+{
+    float fontSize;
+    DeviceModel deviceModel = [WJSysTool deviceModel];
+    if (deviceModel == DeviceModeliPhone4) {
+        fontSize = 16;
+    }
+    else if (deviceModel == DeviceModeliPhone5) {
+        fontSize = 18;
+    }
+    else if (deviceModel == DeviceModeliPhone6) {
+        fontSize = 19;
+    }
+    else if(deviceModel == DeviceModeliPhone6Plus )
+    {
+        fontSize = 20;
+    }
+    return [UIFont systemFontOfSize:fontSize];
+}
+
 @end
