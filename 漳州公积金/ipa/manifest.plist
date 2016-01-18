@@ -11,19 +11,19 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>https://raw.githubusercontent.com/xmszb/dw/master/dwshop.plist</string>
+					<string>https://raw.githubusercontent.com/fengwujie/zzgjj/master/漳州公积金/ipa/漳州公积金.ipa</string>
 				</dict>
 				<dict>
 					<key>kind</key>
 					<string>display-image</string>
 					<key>url</key>
-					<string>https://raw.githubusercontent.com/xmszb/dw/master/dwshop.plist</string>
+					<string>https://raw.githubusercontent.com/fengwujie/zzgjj/master/漳州公积金/ipa/gjj_logo.png</string>
 				</dict>
 				<dict>
 					<key>kind</key>
 					<string>full-size-image</string>
 					<key>url</key>
-					<string>https://raw.githubusercontent.com/xmszb/dw/master/dwshop.plist</string>
+					<string>https://raw.githubusercontent.com/fengwujie/zzgjj/master/漳州公积金/ipa/gjj_logo.png</string>
 				</dict>
 			</array>
 			<key>metadata</key>
