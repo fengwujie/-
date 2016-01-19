@@ -139,7 +139,10 @@
     
 //    self.tabBar.frame = tabFrame;
     float toolBarH = self.tabBar.height;
-    if ([WJSysTool deviceModel] == DeviceModeliPhone6Plus) {
+    if ([WJSysTool deviceModel] == DeviceModeliPhone6) {
+        toolBarH = 55;
+    }
+    else if ([WJSysTool deviceModel] == DeviceModeliPhone6Plus) {
         toolBarH = 60;
     }
 //    else if([WJSysTool getDeviceModel] == DeviceModeliPhone6Plus )

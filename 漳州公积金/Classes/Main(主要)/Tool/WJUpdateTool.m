@@ -53,6 +53,7 @@ typedef enum {
          // 返回的字典
          NSString *maxVersion = [result stringByXmlNoteContentWithElementName:@"iosMaxVersion"];  //最新版本号
          NSString *minVersion = [result stringByXmlNoteContentWithElementName:@"iosMinVersion"];  //强制升级的版本号
+         //NSString *updateUrl = @"itms-services://?action=download-manifest&url=http://git.oschina.net/fengwujie/zzgjj/raw/master/manifest.plist";
          NSString *updateUrl = [result stringByXmlNoteContentWithElementName:@"iosUpdateUrl"];  //升级路径
          // 获得当前打开软件的版本号
          NSString *versionKey = (__bridge NSString *)kCFBundleVersionKey;
