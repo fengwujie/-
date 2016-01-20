@@ -41,4 +41,11 @@ typedef enum{
  *  获取导航栏字体大小
  */
 + (UIFont *) navigationTitleFont;
+/**
+ *  显示提示信息
+ *
+ *  @param msgtitle 标题内容
+ *  @param msgText  文本内容
+ */
++ (void)ShowMessage : (NSString*)msgtitle : (NSString*)msgText;
 @end

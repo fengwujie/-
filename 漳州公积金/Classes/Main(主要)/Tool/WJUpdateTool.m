@@ -43,9 +43,28 @@ typedef enum {
     AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
     mgr.responseSerializer = [AFHTTPResponseSerializer serializer];
     mgr.requestSerializer = [AFHTTPRequestSerializer serializer];
+    
+    UIActivityIndicatorView *activityIndicatorView = [[UIActivityIndicatorView alloc]  init];
+    activityIndicatorView.width = 100;
+    activityIndicatorView.height = 100;
+    float centerX = [UIScreen mainScreen].bounds.size.width * 0.5;
+    float centerY = [UIScreen mainScreen].bounds.size.height * 0.5;
+    activityIndicatorView.center = CGPointMake(centerX, centerY);
+    [activityIndicatorView setActivityIndicatorViewStyle: UIActivityIndicatorViewStyleGray];
+    UIView *view = [[UIApplication sharedApplication].windows lastObject];
+    [view addSubview : activityIndicatorView];
+    
+    if (prompt) {
+//        [MBProgressHUD showMessage:@""];
+        [activityIndicatorView startAnimating];
+    }
     // 2.发送GET请求
     [mgr GET:@"http://2015.zzgjj.gov.cn/download/update.xml" parameters:nil
      success:^(AFHTTPRequestOperation *operation, id responseObj) {
+         if (prompt) {
+//             [MBProgressHUD hideHUD];
+             [activityIndicatorView stopAnimating];
+         }
          WJLog(@"success:转换前：%@",responseObj);
          NSData *resultData = responseObj;
          NSString *result =  [[NSString alloc]initWithData:resultData encoding:NSUTF8StringEncoding];
@@ -73,11 +92,18 @@ typedef enum {
              //不需要升级
              if (prompt) {
                  // 提示已经是最新版本
-                 [MBProgressHUD showSuccess:@"当前版本已经是最新版本！"];
+//                 [MBProgressHUD showSuccess:@"当前版本已经是最新版本！"];
+                 [WJSysTool ShowMessage:nil :@"当前版本已经是最新版本！"];
              }
          }
      } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
          WJLog(@"检查升级：访问网络出错：%@", error);
+         if (prompt) {
+//             [MBProgressHUD hideHUD];
+//             [MBProgressHUD showError:@"检查升级出错，请检查网络是否可用！"];
+             [activityIndicatorView stopAnimating];
+             [WJSysTool ShowMessage:nil :@"检查升级出错，请检查网络是否可用！"];
+         }
      }];
 
     

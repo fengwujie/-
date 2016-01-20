@@ -86,4 +86,14 @@
     return [UIFont systemFontOfSize:fontSize];
 }
 
+/*
+ 显示提示消息（自定义标题）
+ */
+
++(void)ShowMessage : (NSString*)msgtitle : (NSString*)msgText
+{
+    UIAlertView *alter = [[UIAlertView alloc] initWithTitle:msgtitle message:msgText delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+    
+    [alter show];
+}
 @end

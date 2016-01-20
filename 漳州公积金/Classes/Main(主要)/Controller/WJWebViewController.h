@@ -15,4 +15,9 @@
  */
 @property (nonatomic, copy) NSString *strUrl;
 
+/**
+ *  是否为主界面的web页面
+ */
+@property (nonatomic, assign, getter=isMainWeb) BOOL bMainWeb;
+
 @end

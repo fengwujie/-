@@ -90,12 +90,12 @@
                   moduleName = "zzgjj"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/fengwujie/Desktop/source/%E6%BC%B3%E5%B7%9E%E5%85%AC%E7%A7%AF%E9%87%91/%E6%BC%B3%E5%B7%9E%E5%85%AC%E7%A7%AF%E9%87%91/Classes/Main(%E4%B8%BB%E8%A6%81)/Tool/SoapWebServices/SCHttp/SCHttpClient.m"
-                  timestampString = "474907967.288709"
+                  timestampString = "474961485.061201"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "76"
                   endingLineNumber = "76"
-                  offsetFromSymbolStart = "251">
+                  offsetFromSymbolStart = "370">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -105,12 +105,12 @@
                   moduleName = "zzgjj"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/fengwujie/Desktop/source/%E6%BC%B3%E5%B7%9E%E5%85%AC%E7%A7%AF%E9%87%91/%E6%BC%B3%E5%B7%9E%E5%85%AC%E7%A7%AF%E9%87%91/Classes/Main(%E4%B8%BB%E8%A6%81)/Tool/SoapWebServices/SCHttp/SCHttpClient.m"
-                  timestampString = "474907967.289049"
+                  timestampString = "474961485.061524"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "76"
                   endingLineNumber = "76"
-                  offsetFromSymbolStart = "43">
+                  offsetFromSymbolStart = "32">
                </Location>
             </Locations>
          </BreakpointContent>

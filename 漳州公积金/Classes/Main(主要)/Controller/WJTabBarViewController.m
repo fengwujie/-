@@ -78,6 +78,7 @@
     
     WJMineViewController *mine = [[WJMineViewController alloc] init];
     mine.strUrl = WJUrlGJJ;
+    mine.bMainWeb = YES;
     [self addOneChlildVc:mine title:@"个人中心" imageName:@"ic_tab_account_normal" selectedImageName:@"ic_tab_account_press"];
     self.mine= mine;
     
