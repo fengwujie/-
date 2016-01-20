@@ -14,9 +14,6 @@
 		FD0C086B1C3A9BE700F6E64A /* WJCommonLabelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0C08641C3A9BE700F6E64A /* WJCommonLabelItem.m */; };
 		FD0C086C1C3A9BE700F6E64A /* WJCommonSwitchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0C08661C3A9BE700F6E64A /* WJCommonSwitchItem.m */; };
 		FD10A6411C48E43A00DD8FB8 /* WJGridButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FD10A6401C48E43A00DD8FB8 /* WJGridButton.m */; };
-		FD1D59E71C4CBB0E009A6982 /* manifest.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD1D59E51C4CBB0E009A6982 /* manifest.plist */; };
-		FD1D59E81C4CBB0E009A6982 /* 漳州公积金.ipa in Resources */ = {isa = PBXBuildFile; fileRef = FD1D59E61C4CBB0E009A6982 /* 漳州公积金.ipa */; };
-		FD1D59EA1C4CBC01009A6982 /* gjj_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1D59E91C4CBC01009A6982 /* gjj_logo.png */; };
 		FD1ED28C1C3AD2F3006FD923 /* WJBaseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1ED28B1C3AD2F3006FD923 /* WJBaseTool.m */; };
 		FD1ED28F1C3AD36A006FD923 /* WJHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1ED28E1C3AD36A006FD923 /* WJHttpTool.m */; };
 		FD345E3B1C46429D00B47B52 /* NSString+Xml.m in Sources */ = {isa = PBXBuildFile; fileRef = FD345E3A1C46429C00B47B52 /* NSString+Xml.m */; };
@@ -139,9 +136,6 @@
 		FD0C08661C3A9BE700F6E64A /* WJCommonSwitchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJCommonSwitchItem.m; sourceTree = "<group>"; };
 		FD10A63F1C48E43A00DD8FB8 /* WJGridButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJGridButton.h; sourceTree = "<group>"; };
 		FD10A6401C48E43A00DD8FB8 /* WJGridButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJGridButton.m; sourceTree = "<group>"; };
-		FD1D59E51C4CBB0E009A6982 /* manifest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = manifest.plist; sourceTree = "<group>"; };
-		FD1D59E61C4CBB0E009A6982 /* 漳州公积金.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = "漳州公积金.ipa"; sourceTree = "<group>"; };
-		FD1D59E91C4CBC01009A6982 /* gjj_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gjj_logo.png; sourceTree = "<group>"; };
 		FD1ED28A1C3AD2F3006FD923 /* WJBaseTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJBaseTool.h; sourceTree = "<group>"; };
 		FD1ED28B1C3AD2F3006FD923 /* WJBaseTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJBaseTool.m; sourceTree = "<group>"; };
 		FD1ED28D1C3AD36A006FD923 /* WJHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJHttpTool.h; sourceTree = "<group>"; };
@@ -363,16 +357,6 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		FD1D59E41C4CBB0E009A6982 /* ipa */ = {
-			isa = PBXGroup;
-			children = (
-				FD1D59E91C4CBC01009A6982 /* gjj_logo.png */,
-				FD1D59E51C4CBB0E009A6982 /* manifest.plist */,
-				FD1D59E61C4CBB0E009A6982 /* 漳州公积金.ipa */,
-			);
-			path = ipa;
-			sourceTree = "<group>";
-		};
 		FD8D86291C3B6DC50005C75F /* MJRefresh */ = {
 			isa = PBXGroup;
 			children = (
@@ -519,7 +503,6 @@
 		FDA18FB31C3A47E800DFA1D1 /* 漳州公积金 */ = {
 			isa = PBXGroup;
 			children = (
-				FD1D59E41C4CBB0E009A6982 /* ipa */,
 				FDDE455A1C3A4E5A00C39457 /* Classes */,
 				FDA18FBD1C3A47E800DFA1D1 /* Main.storyboard */,
 				FDA18FC21C3A47E800DFA1D1 /* LaunchScreen.storyboard */,
@@ -1039,8 +1022,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD1D59E81C4CBB0E009A6982 /* 漳州公积金.ipa in Resources */,
-				FD1D59E71C4CBB0E009A6982 /* manifest.plist in Resources */,
 				FDB5EBD41C3FF4E80087517D /* WJLoadMoreFooter.xib in Resources */,
 				FDA18FC41C3A47E800DFA1D1 /* LaunchScreen.storyboard in Resources */,
 				FDA18FC11C3A47E800DFA1D1 /* Assets.xcassets in Resources */,
@@ -1049,7 +1030,6 @@
 				FD8D866A1C3B6DC50005C75F /* MJRefresh.bundle in Resources */,
 				FDA18FBF1C3A47E800DFA1D1 /* Main.storyboard in Resources */,
 				FDB5EBCA1C3FAC630087517D /* WJHomeButton.xib in Resources */,
-				FD1D59EA1C4CBC01009A6982 /* gjj_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1234,6 +1214,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1280,6 +1261,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1306,6 +1288,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: su zhibai (J77EHTBHT8)";
+				ENABLE_BITCODE = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/漳州公积金/PrefixHeader.pch";
 				INFOPLIST_FILE = "漳州公积金/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -1323,6 +1306,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: XIAMEN DANCING WOLVES APPAREL CO.LTD.";
+				ENABLE_BITCODE = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/漳州公积金/PrefixHeader.pch";
 				INFOPLIST_FILE = "漳州公积金/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
