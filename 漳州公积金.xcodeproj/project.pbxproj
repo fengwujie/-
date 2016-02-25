@@ -985,7 +985,7 @@
 				TargetAttributes = {
 					FDA18FB01C3A47E800DFA1D1 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = SWQEPPEADH;
+						DevelopmentTeam = 7XD2XM58GT;
 					};
 					FDA18FC91C3A47E800DFA1D1 = {
 						CreatedOnToolsVersion = 7.2;
@@ -1211,7 +1211,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: su zhibai (J77EHTBHT8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xie yongyuan (5ZEAZW2YX9)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_BITCODE = YES;
@@ -1234,7 +1234,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "a3e0791e-f564-401b-9bfb-1be73aafa9e3";
+				PROVISIONING_PROFILE = "0af44e70-f6c4-4bfa-b617-9fd19fdc833a";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1258,7 +1258,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: XIAMEN DANCING WOLVES APPAREL CO.LTD.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Zhangzhou Vision Information Technology Co., Ltd. (7XD2XM58GT)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_BITCODE = YES;
@@ -1274,7 +1274,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "ed5b0089-4a54-4d2c-9dde-081f49fe553c";
+				PROVISIONING_PROFILE = "f5316773-46b7-4e0b-8d77-37ff2e044192";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1287,15 +1287,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: su zhibai (J77EHTBHT8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xie yongyuan (5ZEAZW2YX9)";
 				ENABLE_BITCODE = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/漳州公积金/PrefixHeader.pch";
 				INFOPLIST_FILE = "漳州公积金/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.d-wolves.DwShopInventory";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.vision-soft.zzgjj";
 				PRODUCT_NAME = zzgjj;
-				PROVISIONING_PROFILE = "a3e0791e-f564-401b-9bfb-1be73aafa9e3";
+				PROVISIONING_PROFILE = "0af44e70-f6c4-4bfa-b617-9fd19fdc833a";
 			};
 			name = Debug;
 		};
@@ -1305,15 +1305,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: XIAMEN DANCING WOLVES APPAREL CO.LTD.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Zhangzhou Vision Information Technology Co., Ltd. (7XD2XM58GT)";
 				ENABLE_BITCODE = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/漳州公积金/PrefixHeader.pch";
 				INFOPLIST_FILE = "漳州公积金/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.d-wolves.DwShopInventory";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.vision-soft.zzgjj";
 				PRODUCT_NAME = zzgjj;
-				PROVISIONING_PROFILE = "ed5b0089-4a54-4d2c-9dde-081f49fe553c";
+				PROVISIONING_PROFILE = "f5316773-46b7-4e0b-8d77-37ff2e044192";
 			};
 			name = Release;
 		};

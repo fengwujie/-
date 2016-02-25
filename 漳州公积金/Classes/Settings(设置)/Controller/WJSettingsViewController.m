@@ -68,11 +68,11 @@ typedef enum {
     NSString *currentVersion = [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"];
     version.text =[NSString stringWithFormat:@"版本号：%@", currentVersion] ;
     
-    WJCommonArrowItem *update = [WJCommonArrowItem itemWithTitle:@"软件升级"];
-    update.operation = ^{
-        [WJUpdateTool CheckUpdate : YES];
-    };
-    group.items = @[version,update];
+//    WJCommonArrowItem *update = [WJCommonArrowItem itemWithTitle:@"软件升级"];
+//    update.operation = ^{
+//        [WJUpdateTool CheckUpdate : YES];
+//    };
+    group.items = @[version];//,update
 }
 
 /** 退出程序 */

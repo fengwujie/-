@@ -45,7 +45,7 @@
     self.navigationItem.titleView = titleView;
     [self setup];
     
-    [WJUpdateTool CheckUpdate : NO];
+    //[WJUpdateTool CheckUpdate : NO];
 }
 
 /**
