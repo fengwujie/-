@@ -160,5 +160,21 @@
     } else { // 取消右边的内容
         self.accessoryView = nil;
     }
+    if ([item isKindOfClass:[WJCommonLabelItem class]])
+    {
+        if(item.operation == nil)
+        {
+            self.selectionStyle = UITableViewCellSelectionStyleNone;
+            // 设置背景view
+            UIImageView *imageView = [[UIImageView alloc] init];
+            imageView.backgroundColor = WJGlobalBg;
+            self.backgroundView = imageView;
+            self.selectedBackgroundView = imageView;
+            return;
+        }
+    }
+    // 设置背景view
+    self.backgroundView = [[UIImageView alloc] init];
+    self.selectedBackgroundView = [[UIImageView alloc] init];
 }
 @end

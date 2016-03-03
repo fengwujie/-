@@ -26,6 +26,7 @@ typedef enum {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     //self.view.backgroundColor = WJRandomColor;
     [self setupGroups];
     [self setupFooter];

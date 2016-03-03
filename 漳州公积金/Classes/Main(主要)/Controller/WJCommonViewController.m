@@ -43,7 +43,7 @@
     
     // 设置tableView属性
     self.tableView.backgroundColor = WJGlobalBg;
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    //self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.sectionFooterHeight = WJStatusCellMargin;
     self.tableView.sectionHeaderHeight = 0;
     self.tableView.contentInset = UIEdgeInsetsMake(WJStatusCellMargin - 35, 0, 0, 0);
@@ -96,9 +96,8 @@
         destVc.title = item.title;
         [self.navigationController pushViewController:destVc animated:YES];
     }
-    
     // 3.判断有无想执行的操作
-    if (item.operation) {
+    else if (item.operation) {
         item.operation();
     }
 }
